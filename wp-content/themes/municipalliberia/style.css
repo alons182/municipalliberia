@@ -753,6 +753,9 @@ img {
   .header .sub-menu .menu-item {
     border-bottom: 1px solid #000;
     display: block;
+    opacity: 1 !important;
+    -ms-filter: none !important;
+    filter: none !important;
   }
   .header__submenu__item:last-child,
   .header .sub-menu__item:last-child,

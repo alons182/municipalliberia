@@ -29,7 +29,7 @@
     menu.find(".menu-item").hover(
           function() {
                 menu.find(".menu-item").css('opacity','0.5');
-                $(this).find(">.sub-menu").find('.menu-item').css('opacity','1');
+                $(this).parents('.menu-item').css('opacity','1');
                 $(this).css('opacity','1');
 
               },

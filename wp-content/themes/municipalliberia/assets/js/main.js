@@ -28,7 +28,7 @@
 
     menu.find(".menu-item").hover(
           function() {
-                menu.find(".menu-item").css('opacity','.5');
+                menu.find(".menu-item").css('opacity','0.5');
                 $(this).css('opacity','1');
 
               },

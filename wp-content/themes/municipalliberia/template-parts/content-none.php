@@ -8,7 +8,7 @@
  */
 
 ?>
-<h1 class="news__title">&nbsp;</h1>
+
 <section class="no-results not-found">
 	<header class="page-header">
 		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'municipalliberia' ); ?></h1>

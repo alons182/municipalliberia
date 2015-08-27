@@ -16,7 +16,6 @@
             <figure class="news__item__figure">
                 <?php the_post_thumbnail( 'full' ,["class" => "news__item__img"]); ?> 
                 <div class="news__item__date">
-                   <?php /*the_date('Y.m.d'); */?>
                    <?php echo get_the_date('Y.m.d'); ?>
                 </div>
             </figure>

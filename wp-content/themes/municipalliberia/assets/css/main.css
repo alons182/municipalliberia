@@ -1097,6 +1097,9 @@ img {
 .comments-area .comment-list {
   margin-bottom: 2rem;
 }
+.comments-area .comment-respond a {
+  color: #ffe600;
+}
 .not-found {
   background-color: #000;
   padding: 1rem;

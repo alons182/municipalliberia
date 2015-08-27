@@ -26,14 +26,14 @@
 
 
 
-    menu.find(".header__menu__item").hover(
+    menu.find(".menu-item").hover(
           function() {
-                menu.find(".header__menu__item").css('opacity','.8');
+                menu.find(".menu-item").css('opacity','.8');
                 $(this).css('opacity','1');
 
               },
           function() {
-                menu.find(".header__menu__item").css('opacity','1');
+                menu.find(".menu-item").css('opacity','1');
                
               }
          

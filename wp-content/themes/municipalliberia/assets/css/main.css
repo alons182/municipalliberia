@@ -1170,6 +1170,14 @@ img {
   padding-bottom: 1rem;
   background-color: #000;
 }
+.widgets .widget iframe,
+.widgets__site .widget iframe {
+  width: 100%;
+}
+.widgets .widget iframe footer,
+.widgets__site .widget iframe footer {
+  display: none;
+}
 .widgets .widget_search,
 .widgets__site .widget_search {
   padding: 0.5rem;

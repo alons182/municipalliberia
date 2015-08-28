@@ -1167,6 +1167,11 @@ img {
   border-bottom: 8px solid #000;
   font-weight: 700;
 }
+.widgets #text-2,
+.widgets__site #text-2 {
+  overflow: hidden;
+  height: 375px;
+}
 .widgets .widget,
 .widgets__site .widget {
   margin-bottom: 1rem;
@@ -1179,7 +1184,7 @@ img {
 }
 .widgets .widget iframe footer,
 .widgets__site .widget iframe footer {
-  display: none;
+  display: none !important;
 }
 .widgets .widget_search,
 .widgets__site .widget_search {

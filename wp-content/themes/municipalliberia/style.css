@@ -555,7 +555,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 80%;
   line-height: 30px;
-  background: url("./img/bg_yellow_full.jpg") fixed repeat #000;
+  background: url("./img/bg_yellow_full.png") fixed repeat, url("./img/bg-photos.jpg") fixed repeat center center #000;
 }
 ul {
   margin: 0;
@@ -1167,10 +1167,9 @@ img {
   border-bottom: 8px solid #000;
   font-weight: 700;
 }
-.widgets #text-2,
-.widgets__site #text-2 {
-  overflow: hidden;
-  height: 375px;
+.widgets #text-2 iframe footer,
+.widgets__site #text-2 iframe footer {
+  position: static !important;
 }
 .widgets .widget,
 .widgets__site .widget {

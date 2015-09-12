@@ -14,7 +14,7 @@ body
 	font-family 'Open Sans', sans-serif
 	font-size 80%
 	line-height 30px
-	background url('./img/bg_yellow_full.jpg') fixed repeat #000
+	background url('./img/bg_yellow_full.png') fixed repeat, url('./img/bg-photos.jpg') fixed repeat center center #000
 
 
 ul
@@ -518,8 +518,12 @@ img
 		border-bottom 8px solid #000
 		font-weight 700
 	#text-2
-		overflow hidden
-		height 375px
+		//overflow hidden
+		//height 375px
+		iframe
+			footer
+				position static !important
+			
 	.widget 
 		//border 5px solid #000
 		margin-bottom 1rem

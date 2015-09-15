@@ -62,9 +62,7 @@
     itemWidth: 0,
     itemMargin: 0
   });*/
-$('#gallery-1').scrollingCarousel( {
-      //autoScroll: true
-    });
+$('#gallery-1').scrollingCarousel();
 
 $('.gallery-item a').magnificPopup({
 

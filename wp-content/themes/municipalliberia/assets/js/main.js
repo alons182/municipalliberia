@@ -47,6 +47,58 @@
         space: 20
 
     });
+
+   /*$('.media__slider').contentcarousel({
+        nav: 5,
+        auto:false,
+        space: 0,
+        wrapper: '.gallery',
+        item: '.gallery-item'
+
+    });*/
+   /* $('.media__slider').flexslider({
+    animation: "slide",
+    animationLoop: false,
+    itemWidth: 0,
+    itemMargin: 0
+  });*/
+$('#gallery-1').scrollingCarousel( {
+      //autoScroll: true
+    });
+
+$('.gallery-item a').magnificPopup({
+
+        type:'image',
+        midClick: true, // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+        removalDelay: 500, //delay removal by X to allow out-animation
+        callbacks: {
+            beforeOpen: function() {
+
+                //this.st.mainClass = this.st.el.attr('data-effect');
+            },
+             open: function() {
+                //this.content.find('img').attr('src', this.st.el.attr('data-img'));
+                this.content.find('mfp-bottom-bar').html('mg');
+            },
+
+        }
+    });
+ $('.media__item__link').magnificPopup({
+
+        type:'inline',
+        midClick: true, // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+        removalDelay: 500, //delay removal by X to allow out-animation
+        callbacks: {
+            beforeOpen: function() {
+
+                this.st.mainClass = this.st.el.attr('data-effect');
+            },
+             open: function() {
+                this.content.find('img').attr('src', this.st.el.attr('data-img'));
+            },
+
+        }
+    });
      
 
     // SMOOTH ANCHOR SCROLLING

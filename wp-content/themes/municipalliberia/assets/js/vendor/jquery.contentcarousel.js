@@ -15,14 +15,14 @@
 				
 				// clone the elements on the right / left and append / prepend them according to dir and scroll
 				if( dir === 1 ) {
-					$wrapper.find('div.ca-item:lt(' + scroll + ')').each(function(i) {
+					$wrapper.find('.ca-item:lt(' + scroll + ')').each(function(i) {
 						$(this).clone(true).css( 'left', ( cache.totalItems - idxClicked + i ) * cache.itemW * factor + 'px' ).appendTo( $wrapper );
 					});
 				}
 				else {
 					var $first	= $wrapper.children().eq(0);
 					
-					$wrapper.find('div.ca-item:gt(' + ( cache.totalItems  - 1 - scroll ) + ')').each(function(i) {
+					$wrapper.find('.ca-item:gt(' + ( cache.totalItems  - 1 - scroll ) + ')').each(function(i) {
 						// insert before $first so they stay in the right order
 						$(this).clone(true).css( 'left', - ( scroll - i + idxClicked ) * cache.itemW * factor + 'px' ).insertBefore( $first );
 					});
@@ -30,7 +30,7 @@
 				
 				// animate the left of each item
 				// the calculations are dependent on dir and on the cache.expanded value
-				$wrapper.find('div.ca-item').each(function(i) {
+				$wrapper.find('.ca-item').each(function(i) {
 					var $item	= $(this);
 					$item.stop().animate({
 						left	:  ( dir === 1 ) ? '-=' + ( cache.itemW * factor * scroll ) + 'px' : '+=' + ( cache.itemW * factor * scroll ) + 'px'
@@ -49,7 +49,7 @@
 				cache.idxClicked	= $item.index();
 				// the item's position (1, 2, or 3) on the viewport (the visible items) 
 				cache.winpos		= aux.getWinPos( $item.position().left, cache );
-				$wrapper.find('div.ca-item').not( $item ).hide();
+				$wrapper.find('.ca-item').not( $item ).hide();
 				$item.find('div.ca-content-wrapper').css( 'left', cache.itemW + 'px' ).stop().animate({
 					width	: cache.itemW * 2 + 'px',
 					left	: cache.itemW + 'px'
@@ -70,7 +70,7 @@
 			openItems	: function( $wrapper, $openedItem, opts, cache ) {
 				var openedIdx	= $openedItem.index();
 				
-				$wrapper.find('div.ca-item').each(function(i) {
+				$wrapper.find('.ca-item').each(function(i) {
 					var $item	= $(this),
 						idx		= $item.index();
 					
@@ -109,7 +109,7 @@
 				// show more link
 				aux.toggleMore( $openedItem, true );
 				
-				$wrapper.find('div.ca-item').each(function(i) {
+				$wrapper.find('.ca-item').each(function(i) {
 					var $item	= $(this),
 						idx		= $item.index();
 					
@@ -151,7 +151,9 @@
 						nav				: 4,					// number of items to show nav
                         auto			: false,					// auto click
                         autoTime        : 3000,
-                        space        : 20 ///space betwen items
+                        space        : 20, ///space betwen items
+                        wrapper      : null,
+                        item      : null
 					};
 					
 					return this.each(function() {
@@ -162,8 +164,8 @@
 						}
 						
 						var $el 			= $(this),
-							$wrapper		= $el.find('div.ca-wrapper'),
-							$items			= $wrapper.children('div.ca-item'),
+							$wrapper		= (settings.wrapper) ? $(settings.wrapper) : $el.find('.ca-wrapper'),
+							$items			= (settings.item) ? $wrapper.children(settings.item) : $wrapper.children('.ca-item'),
 							cache			= {};
 						
 						// save the with of one item	
@@ -195,6 +197,16 @@
 								position	: 'absolute',
 								left		: i * cache.itemW + 'px'
 							});
+							/*$(this).css({
+								display	: 'inline-block',
+								//left		: i * cache.itemW + 'px'
+							});*/
+							/*$(this).css({
+								position	: 'absolute',
+								left		: i * $(this).prev().width() + 'px' //i * cache.itemW + 'px'
+							});*/
+							
+							(! $(this).hasClass('ca-item')) ? $(this).addClass('ca-item'): '';
 						});
 						
 						// click to open the item(s)

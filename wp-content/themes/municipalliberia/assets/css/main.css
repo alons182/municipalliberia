@@ -947,6 +947,16 @@ img {
   padding: 1.8rem;
   color: #fff;
 }
+.news .entry-content h1,
+.news .entry-content h2,
+.news .entry-content h3,
+.news .entry-content h4,
+.news .entry-content h5 {
+  color: #ffe600;
+}
+.news .entry-content ul {
+  margin-left: 20px;
+}
 .news .entry-content .sidebar {
   padding-left: 0;
   position: relative;
@@ -1363,18 +1373,22 @@ img {
 }
 .media {
   background: url("./img/total_tex.png") repeat #ffe600;
-  padding: 2rem 0;
+  height: 230px;
   overflow: hidden;
 }
+.media .gallery-item,
 .media__item {
   width: 100%;
   position: relative;
   overflow: hidden;
-  margin-bottom: 1rem;
+/*&__figure
+			//width 100%*/
 }
+.media .gallery-item__title,
 .media__item__title {
   padding: 10px 0;
 }
+.media .gallery-item__title h1,
 .media__item__title h1 {
   font-size: 16px;
   color: #000;
@@ -1382,23 +1396,58 @@ img {
   line-height: 20px;
   margin-bottom: 5px;
 }
+.media .gallery-item__link,
 .media__item__link {
   display: block;
   overflow: hidden;
 }
-.media__item__figure {
+.media .gallery-item img,
+.media__item img {
+  width: auto;
+  height: 230px;
+  display: block;
+}
+.media__slider {
+  position: relative;
   width: 100%;
 }
-.media__item__figure img {
+.media__slider .ca-nav span {
+  color: #ffe600;
+  position: absolute;
+  -webkit-transform: translate(0, 50%);
+  -moz-transform: translate(0, 50%);
+  -o-transform: translate(0, 50%);
+  -ms-transform: translate(0, 50%);
+  transform: translate(0, 50%);
+  z-index: 200;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.6);
+  padding: 4rem 1rem;
+  font-size: 3rem;
+}
+.media__slider .ca-nav span:hover {
+  background-color: rgba(0,0,0,0.85);
+}
+.media__slider .ca-nav .ca-nav-prev {
+  left: 0;
+}
+.media__slider .ca-nav .ca-nav-next {
+  right: 0;
+}
+.media__slider .flex-direction-nav {
+  z-index: 9999;
+}
+.image-popup img {
   width: 100%;
   display: block;
 }
 @media screen and (min-width: 540px) {
+  .media .gallery-item,
   .media__item {
-    width: 33.33%;
+    width: auto;
     float: left;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
+/*border-left 15px solid transparent
+			border-right 15px solid transparent*/
   }
 }
 .member {

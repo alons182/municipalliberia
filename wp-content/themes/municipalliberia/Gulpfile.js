@@ -24,14 +24,16 @@ var gulp        = require('gulp'),
 
 gulp.task('js', function () {
   gulp.src([
-      './assets/js/vendor/jquery-1.11.2.min.js',
+      //'./assets/js/vendor/jquery-1.11.2.min.js',
       './assets/js/vendor/jquery.hoverIntent.minified.js',
       './assets/js/vendor/jquery.contentcarousel.js',
       './assets/js/vendor/jquery.easing.1.3.js',
       
-      /*'./assets/js/vendor/jquery.magnific-popup.min.js',*/
+      './assets/js/vendor/jquery.magnific-popup.min.js',
       /*'./assets/js/vendor/jquery.mCustomScrollbar.js',*/
       './assets/js/vendor/jquery.cycle2.min.js',
+      /*'./assets/js/vendor/jquery.flexslider.js',*/
+      './assets/js/vendor/scrollingcarousel.2.0.js',
       /*'./assets/js/vendor/chosen.jquery.min.js',
       './assets/js/vendor/wow.min.js',*/
       /*'./assets/js/vendor/jquery.uniform.js',*/
@@ -59,7 +61,7 @@ gulp.task('stylus', function () {
 });
 
 gulp.task('css', function () {
-  gulp.src(['./assets/css/main.css',/*'./assets/css/magnific-popup.css',*/])
+  gulp.src(['./assets/css/main.css','./assets/css/magnific-popup.css','./assets/css/flexslider.css'])
     /*.pipe(minifyCSS({ keepSpecialComments: '*', keepBreaks: '*'}))*/
     .pipe(concat('style.css'))
     .pipe(gulp.dest('./'))

@@ -30,7 +30,7 @@
                                         </figure>
                                         <span class="store__slider__item__caption">
                                             
-                                                Camisa Portero
+                                                Camisa Casa
 
                                            
                                         </span>
@@ -40,11 +40,11 @@
                                 <div class="store__slider__item ca-item">
                                     <a href="#" class="store__slider__item__link">
                                         <figure class="store__slider__item__img">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/img/shop-item2.jpg" alt="item">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/shop-item-2.jpg" alt="item">
                                         </figure>
                                         <span class="store__slider__item__caption">
                                             
-                                                pantaloneta
+                                                Pantaloneta Casa
 
                                            
                                         </span>
@@ -54,11 +54,11 @@
                                 <div class="store__slider__item ca-item">
                                     <a href="#" class="store__slider__item__link">
                                         <figure class="store__slider__item__img">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/img/shop-item.jpg" alt="item">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/shop-item-3.jpg" alt="item">
                                         </figure>
                                         <span class="store__slider__item__caption">
                                             
-                                                Camisa Portero
+                                                Camisa Visita
 
                                            
                                         </span>
@@ -68,11 +68,11 @@
                                 <div class="store__slider__item ca-item">
                                     <a href="#" class="store__slider__item__link">
                                         <figure class="store__slider__item__img">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/img/shop-item2.jpg" alt="item">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/shop-item-4.jpg" alt="item">
                                         </figure>
                                         <span class="store__slider__item__caption">
                                             
-                                                pantaloneta
+                                                Pantaloneta Visita
 
                                            
                                         </span>
@@ -82,31 +82,19 @@
                                 <div class="store__slider__item ca-item">
                                     <a href="#" class="store__slider__item__link">
                                         <figure class="store__slider__item__img">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/img/shop-item.jpg" alt="item">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/shop-item-5.jpg" alt="item">
                                         </figure>
                                         <span class="store__slider__item__caption">
                                             
-                                                Camisa Portero
+                                                Camisa Portero Casa
 
                                            
                                         </span>
                                     </a>
                                     
                                 </div>
-                                <div class="store__slider__item ca-item">
-                                    <a href="#" class="store__slider__item__link">
-                                        <figure class="store__slider__item__img">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/img/shop-item.jpg" alt="item">
-                                        </figure>
-                                        <span class="store__slider__item__caption">
-                                            
-                                                Camisa Portero
-
-                                           
-                                        </span>
-                                    </a>
-                                    
-                                </div>
+                                
+                                
                            
 
                         </div>
@@ -114,38 +102,76 @@
                 </div>
             </section>
             <section class="media">
-                <div class="inner">
-                    
-                    <article class="media__item">
-                        <a class="media__item__link">
-                            <figure class="media__item__figure">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/media.jpg" />
-                            </figure>
-                            <div class="media__item__title">
-                                <h1>Lorem ipsum dolor sit amet, consectetur </h1>
-                            </div>
-                        </a>
-                    </article>
-                    <article class="media__item">
-                        <a class="media__item__link">
-                            <figure class="media__item__figure">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/media.jpg" />
-                            </figure>
-                            <div class="media__item__title">
-                                <h1>Lorem ipsum dolor sit amet, consectetur </h1>
-                            </div>
-                        </a>
-                    </article>
-                    <article class="media__item">
-                        <a class="media__item__link">
-                            <figure class="media__item__figure">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/media.jpg" />
-                            </figure>
-                            <div class="media__item__title">
-                                <h1>Lorem ipsum dolor sit amet, consectetur </h1>
-                            </div>
-                        </a>
-                    </article>
+                <div class="media__slider">
+                        
+                        <?php rewind_posts(); ?>
+                      <?php query_posts( 'post_type=page&page_id=44' ); ?>
+                        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+                                <?php the_content(); ?>
+                
+                            <?php endwhile; ?>
+                            <!-- post navigation -->
+                          
+                        <?php endif; ?>
+                  <!--<ul class="ca-wrapper slides">    
+                     <li class="media__item ca-item">
+                            <a href="#image-popup" class="media__item__link" data-effect="mfp-zoom-out" data-img="<?php echo get_template_directory_uri(); ?>/img/media.jpg">
+                                <figure class="media__item__figure">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/media.jpg" />
+                                </figure>
+                                
+                            </a>
+                        </li>
+                        <li class="media__item ca-item">
+                            <a href="#image-popup" class="media__item__link" data-effect="mfp-zoom-out" data-img="<?php echo get_template_directory_uri(); ?>/img/Satellite.jpg">
+                                <figure class="media__item__figure">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/Satellite.jpg" />
+                                </figure>
+                                
+                            </a>
+                        </li>
+                        <li class="media__item ca-item">
+                            <a href="#image-popup" class="media__item__link" data-effect="mfp-zoom-out" data-img="<?php echo get_template_directory_uri(); ?>/img/media.jpg">
+                                <figure class="media__item__figure">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/marcador.jpg" />
+                                </figure>
+                                
+                            </a>
+                        </li>
+                        <li class="media__item ca-item">
+                            <a href="#image-popup" class="media__item__link" data-effect="mfp-zoom-out" data-img="<?php echo get_template_directory_uri(); ?>/img/media.jpg">
+                                <figure class="media__item__figure">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/media.jpg" />
+                                </figure>
+                                
+                            </a>
+                        </li>
+                         <li class="media__item ca-item">
+                            <a href="#image-popup" class="media__item__link" data-effect="mfp-zoom-out" data-img="<?php echo get_template_directory_uri(); ?>/img/Satellite.jpg">
+                                <figure class="media__item__figure">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/Satellite.jpg" />
+                                </figure>
+                                
+                            </a>
+                        </li>
+                         <li class="media__item ca-item">
+                            <a href="#image-popup" class="media__item__link">
+                                <figure class="media__item__figure" data-effect="mfp-zoom-out" data-img="<?php echo get_template_directory_uri(); ?>/img/Satellite.jpg">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/Satellite.jpg" />
+                                </figure>
+                                
+                            </a>
+                        </li>
+                        <li class="media__item ca-item">
+                            <a href="#image-popup" class="media__item__link" data-effect="mfp-zoom-out" data-img="<?php echo get_template_directory_uri(); ?>/img/media.jpg">
+                                <figure class="media__item__figure">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/media.jpg" />
+                                </figure>
+                                
+                            </a>
+                        </li>
+                    </ul>-->
                 </div>
             </section>
             <section class="member">
@@ -188,6 +214,25 @@
                 
             
         </footer>
+        <div id="image-popup" class="image-popup white-popup mfp-hide mfp-with-anim">
+          <img src="#" alt="Galeria" />
+           <!--<div class="media__share">
+                        <h2 class="media__share__title">Compartir</h2>
+                        <a class="icon-facebook" title="Facebook" href="#"
+                           onclick="
+                                window.open(
+                                  'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+                                  'facebook-share-dialog',
+                                  'width=626,height=436');
+                                return false;">
+
+                        </a>
+
+                        <a class="icon-twitter" href="https://twitter.com/share?url=#" target="_blank"></a>
+                        <a class="icon-google-plus" href="https://plus.google.com/share?url=" onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"></a>
+                    </div>-->
+        </div>
 <?php wp_footer(); ?>
 
 </body>

@@ -335,6 +335,14 @@ img
 	.entry-content	
 		padding 1.8rem
 		color white
+		h1
+		h2
+		h3
+		h4
+		h5		
+			color amarillo
+		ul 
+			margin-left 20px		
 		.sidebar
 			padding-left 0 //140px !important
 			position relative
@@ -681,13 +689,15 @@ img
 						
 .media
 	background url('./img/total_tex.png') repeat amarillo
-	padding 2rem 0
+	//padding 2rem 0
+	height 230px	
 	overflow hidden
+	.gallery-item
 	&__item
 		width 100%
 		position relative
 		overflow hidden
-		margin-bottom 1rem
+		//margin-bottom 1rem
 		&__title
 			padding 10px 0
 			h1
@@ -699,20 +709,47 @@ img
 		&__link
 			display block
 			overflow hidden
-		&__figure
-			width 100%
-			img
-				width 100%
-				display block
+		/*&__figure
+			//width 100%*/
+		img
+			width auto
+			height 230px
+			display block
+	&__slider
+		position relative
+		width 100%
+		.ca-nav
+			span
+				color amarillo
+				position absolute
+				//top 50%
+				transform translate(0,50%)
+				z-index 200
+				cursor pointer
+				background-color rgba(0, 0, 0, .6)
+				padding 4rem 1rem
+				font-size 3rem
+				&:hover
+					background-color rgba(0, 0, 0, .85)
+			.ca-nav-prev
+				left 0
 				
+			.ca-nav-next
+				right 0
+		.flex-direction-nav
+			z-index 9999					
+.image-popup
+	img 
+		width 100%
+		display block				
 @media screen and (min-width:540px)				
 	.media
-		
+		.gallery-item
 		&__item
-			width 33.33%
+			width auto//33.33%
 			float left
-			border-left 15px solid transparent
-			border-right 15px solid transparent
+			/*border-left 15px solid transparent
+			border-right 15px solid transparent*/
 			
 
 .member

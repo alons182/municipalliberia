@@ -101,11 +101,11 @@
 
 							case 'figure':
 							if (!method) {
-								scrollContainer.innerHTML = '<figure>'+obj[0].innerHTML+'</figure>';
+								scrollContainer.innerHTML = '<div>'+obj[0].innerHTML+'</div>';
 								scrollContainer.innerHTML += scrollContainer.innerHTML;
 							}
-							scrollerContent = obj.children('figure');
-							scrollerChildren = obj.children('figure:first').children('figure');
+							scrollerContent = obj.children('div');
+							scrollerChildren = obj.children('div:first').children('figure');
 							break;
 							
 							case 'ul':

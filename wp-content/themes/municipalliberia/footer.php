@@ -177,7 +177,7 @@
             <section class="member">
                 <div class="inner"> 
                     <h2 class="member__title">Se parte de nosotros</h2>
-                    <p class="member__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quisquam quam suscipit omnis unde, quasi accusantium natus nam ipsa earum a accusamus dicta sit incidunt aliquid perspiciatis! Libero, cupiditate, obcaecati!</p>
+                    <p class="member__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quisquam quam suscipit omnis unde, quasi accusantium natus nam ipsa earum a accusamus dicta sit incidunt aliquid perspiciatis! Libero, cupiditate, obcaecati!2</p>
                     <a class="member__button btn btn-red" href="#">Hazte Miembro</a>
                 </div>
             </section>

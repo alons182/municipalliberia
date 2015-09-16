@@ -46,7 +46,7 @@ get_header(); ?>
 			                	 	foreach ( $images as $image )
 										{?>
 										    
-											<a href="<?php the_permalink(); ?>">
+											<a href="#<?php /*the_permalink();*/ ?>">
 						                    	<img src="<?php echo $image['url'] ?>" alt="<?php the_title(); ?>" />
 						                    </a>
 
@@ -59,7 +59,7 @@ get_header(); ?>
 			                <div class="players__item__info">
 			                	<strong class="players__item__number"><?php echo rwmb_meta( 'rw_player_number'); ?></strong>
 			                	<p class="players__item__content">
-			                		<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+			                		<a href="#<?php /*the_permalink();*/ ?>"><?php the_title(); ?></a>
 			                		<span class="players__item__position"><?php echo rwmb_meta( 'rw_player_position'); ?></span>
 			                	</p>
 

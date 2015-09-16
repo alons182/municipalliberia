@@ -322,7 +322,8 @@ img
 			text-transform uppercase
 	.post
 	.page
-	.attachment	
+	.attachment
+	.equipo		
 		background-color #000
 	.entry-banner
 		background-size cover
@@ -498,6 +499,39 @@ img
 		color amarillo
 		&:hover
 			text-decoration underline				
+.players
+	display flex
+	flex-wrap wrap
+	justify-content space-between
+	&__item
+		width 24%
+		box-shadow 0px 0px 2px 1px rgba(amarillo, 0.1)
+		border 1px solid amarillo
+		&:hover
+			
+			box-shadow 1px 1px 2px 1px rgba(amarillo, 0.5)
+		&__img
+			img
+				display block
+		&__number
+			padding 10px 0
+			display table-cell
+			width 45px
+			border-right 1px solid amarillo
+			font-size 2.9em
+			text-align center
+		&__content
+			padding 8px 10px 22px
+			display table-cell
+			vertical-align middle
+			text-align left
+			font-size 12px
+			text-transform uppercase
+			a 
+				color amarillo
+		&__position
+			line-height 3px
+			display block	
 
 @media screen and (min-width:640px)
 	.news
@@ -698,6 +732,7 @@ img
 		width 100%
 		position relative
 		overflow hidden
+		
 		//margin-bottom 1rem
 		&__title
 			padding 10px 0
@@ -708,14 +743,47 @@ img
 				line-height 20px
 				margin-bottom 5px
 		&__link
+		a	
 			display block
 			overflow hidden
+			&:after
+				content ''
+				position absolute
+				left 0
+				right 0
+				top 0
+				bottom 0
+				width 100%
+				height 100%
+				background-color transparent
+			
 		/*&__figure
 			//width 100%*/
 		img
 			width auto
 			height 230px
 			display block
+	.gallery-icon
+		position relative
+		&:after
+			display none
+			position absolute
+			left 50%
+			top 50%
+			content "\f083"
+			font-family 'municipalliberia'
+			font-size 2rem
+			color #000
+			transform translate(-50%,-50%)
+			
+	.gallery-item
+		&:hover
+			.gallery-icon
+				&:after
+					display block
+			a:after
+				background-color rgba(amarillo, .75)
+				
 	&__slider
 		position relative
 		width 100%

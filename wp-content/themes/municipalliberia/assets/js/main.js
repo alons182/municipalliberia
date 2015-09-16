@@ -63,20 +63,24 @@
     itemMargin: 0
   });*/
 $('#gallery-1').scrollingCarousel();
-
+$('.gallery-item a').attr('data-effect', 'mfp-zoom-out');
 $('.gallery-item a').magnificPopup({
 
         type:'image',
         midClick: true, // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-        removalDelay: 500, //delay removal by X to allow out-animation
+        //removalDelay: 500, //delay removal by X to allow out-animation
+        zoom: {
+            enabled: true,
+            duration: 300 // don't foget to change the duration also in CSS
+          },
         callbacks: {
             beforeOpen: function() {
 
-                //this.st.mainClass = this.st.el.attr('data-effect');
+                this.st.mainClass = 'mfp-with-zoom';//this.st.el.attr('data-effect');
             },
              open: function() {
                 //this.content.find('img').attr('src', this.st.el.attr('data-img'));
-                this.content.find('mfp-bottom-bar').html('mg');
+                this.content.find('.mfp-bottom-bar').append('mg');
             },
 
         }

@@ -12,7 +12,7 @@ get_header(); ?>
 	<section class="content">
         <div class="inner overflow">
 			<section class="news">
-				<h1 class="news__title">Galeria</h1>
+				<h1 class="news__title">Media</h1>
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<?php get_template_part( 'template-parts/content', 'attachment' ); ?>

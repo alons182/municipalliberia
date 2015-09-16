@@ -214,24 +214,14 @@
                 
             
         </footer>
-        <div id="image-popup" class="image-popup white-popup mfp-hide mfp-with-anim">
-          <img src="#" alt="Galeria" />
-           <!--<div class="media__share">
+        <div id="image-popup" class="image-popup yellow-popup mfp-hide mfp-with-anim">
+           <div id="contenido-popup"></div> 
+           <div class="media__share">
                         <h2 class="media__share__title">Compartir</h2>
-                        <a class="icon-facebook" title="Facebook" href="#"
-                           onclick="
-                                window.open(
-                                  'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
-                                  'facebook-share-dialog',
-                                  'width=626,height=436');
-                                return false;">
-
-                        </a>
-
-                        <a class="icon-twitter" href="https://twitter.com/share?url=#" target="_blank"></a>
-                        <a class="icon-google-plus" href="https://plus.google.com/share?url=" onclick="javascript:window.open(this.href,
-  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"></a>
-                    </div>-->
+                        <a class="media__share__facebook icon-facebook" title="Facebook" href="#" target="_blank"></a>
+                        <a class="media__share__twitter icon-twitter" href="#" target="_blank"></a>
+                        <a class="media__share__googleplus icon-google-plus" href="#" target="_blank"></a>
+                    </div>
         </div>
 <?php wp_footer(); ?>
 

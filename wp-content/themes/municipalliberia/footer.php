@@ -93,6 +93,20 @@
                                     </a>
                                     
                                 </div>
+                                <div class="store__slider__item ca-item">
+                                    <a href="#" class="store__slider__item__link">
+                                        <figure class="store__slider__item__img">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/shop-item-6.jpg" alt="item">
+                                        </figure>
+                                        <span class="store__slider__item__caption">
+                                            
+                                                Camisa Femenina Casa
+
+                                           
+                                        </span>
+                                    </a>
+                                    
+                                </div>
                                 
                                 
                            

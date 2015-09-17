@@ -5,14 +5,14 @@
      
      $(window).load(function() {
         $('.main').fadeTo(1000, 1);
-        $('.footer').fadeTo(1000, 1);
+        $('.media').fadeTo(1000, 1);
         setupMediaSlider();     
       });
 
 
      function setupMediaSlider () 
      {
-       $("#gallery-1").find(".gallery-item").each(function(index, value) { 
+        $("#gallery-1").find(".gallery-item").each(function(index, value) { 
              //console.log(index + ':' + $(this).attr('class'));
              $(this).find('a').attr('data-facebook','https://www.facebook.com/sharer/sharer.php?u='+ $(this).find('a').attr('href') );
              $(this).find('a').attr('data-twitter','https://twitter.com/intent/tweet?via=realmadrid&url='+ $(this).find('a').attr('href') );
@@ -21,10 +21,6 @@
              $(this).find('a').attr('href','#image-popup');
         });
 
-        /*$('.gallery-item a').on('click',function (e) {
-          console.log($(this).attr('href'))
-          $(this).attr('href','#image-popup');
-        })*/
 
         $('#gallery-1').scrollingCarousel();
 
@@ -101,20 +97,6 @@
 
     });
 
-   /*$('.media__slider').contentcarousel({
-        nav: 5,
-        auto:false,
-        space: 0,
-        wrapper: '.gallery',
-        item: '.gallery-item'
-
-    });*/
-   /* $('.media__slider').flexslider({
-    animation: "slide",
-    animationLoop: false,
-    itemWidth: 0,
-    itemMargin: 0
-  });*/
 
 
  $('.media__item__link').magnificPopup({

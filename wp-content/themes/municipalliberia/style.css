@@ -1377,9 +1377,6 @@ img {
   }
 }
 .footer {
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
   background-color: #000;
 }
 .social {
@@ -1479,6 +1476,9 @@ img {
 }
 .media {
   background: url("./img/total_tex.png") repeat #ffe600;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
   height: 230px;
   overflow: hidden;
 }

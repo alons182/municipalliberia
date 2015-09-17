@@ -10,7 +10,7 @@
       });
 
 
-     function setupMediaSlider () 
+     function setupMediaSlider() 
      {
         $("#gallery-1").find(".gallery-item").each(function(index, value) { 
              //console.log(index + ':' + $(this).attr('class'));

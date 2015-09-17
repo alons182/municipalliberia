@@ -5,6 +5,7 @@
      
      $(window).load(function() {
         $('.main').fadeTo(1000, 1);
+        $('.footer').fadeTo(1000, 1);
         });
       
        btnMenu.on('click', function(){

@@ -500,11 +500,10 @@ img
 		&:hover
 			text-decoration underline				
 .players
-	display flex
-	flex-wrap wrap
-	justify-content space-between
+	text-align center
 	&__item
-		width 100%
+		width 222px
+		display inline-block
 		box-shadow 0px 0px 2px 1px rgba(amarillo, 0.1)
 		border 1px solid amarillo
 		margin-bottom 1rem
@@ -535,6 +534,9 @@ img
 			display block
 @media screen and (min-width:480px)
 	.players
+		display flex
+		flex-wrap wrap
+		justify-content space-between
 		&__item
 			width 40%	
 @media screen and (min-width:640px)

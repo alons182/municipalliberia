@@ -14,10 +14,11 @@
      {
         $("#gallery-1").find(".gallery-item").each(function(index, value) { 
              //console.log(index + ':' + $(this).attr('class'));
-             $(this).find('a').attr('data-facebook','https://www.facebook.com/sharer/sharer.php?u='+ $(this).find('a').attr('href') );
+             $(this).find('a').attr('data-facebook','http://www.facebook.com/sharer.php?s=100&p[title]='+ $(this).find('a').find('img').attr('alt') +'&p[summary]='+ $(this).find('a').find('img').attr('alt') +'&p[url]='+ $(this).find('a').attr('href') +'&p[images][0]='+ $(this).find('a').find('img').attr('src'));
+             //$(this).find('a').attr('data-facebook','https://www.facebook.com/sharer/sharer.php?u='+ $(this).find('a').attr('href') );
              $(this).find('a').attr('data-twitter','https://twitter.com/intent/tweet?via=realmadrid&url='+ $(this).find('a').attr('href') );
              $(this).find('a').attr('data-googleplus','https://plus.google.com/share?url='+ $(this).find('a').attr('href') );
-             
+             http://www.facebook.com/sharer.php?s=100&p[title]=+ $(this).find('a').attr('href') +'&amp;p[summary]=<?php echo urlencode(YOUR_PAGE_DESCRIPTION) ?>&amp;p[url]=<?php echo urlencode(YOUR_PAGE_URL); ?>&amp;p[images][0]=<?php echo urlencode(YOUR_LINK_THUMBNAIL); ?>"
              $(this).find('a').attr('href','#image-popup');
         });
 

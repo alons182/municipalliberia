@@ -504,9 +504,10 @@ img
 	flex-wrap wrap
 	justify-content space-between
 	&__item
-		width 24%
+		width 100%
 		box-shadow 0px 0px 2px 1px rgba(amarillo, 0.1)
 		border 1px solid amarillo
+		margin-bottom 1rem
 		&:hover
 			
 			box-shadow 1px 1px 2px 1px rgba(amarillo, 0.5)
@@ -531,8 +532,27 @@ img
 				color amarillo
 		&__position
 			line-height 3px
-			display block	
-
+			display block
+@media screen and (min-width:480px)
+	.players
+		&__item
+			width 40%	
+@media screen and (min-width:640px)
+	.players
+		&__item
+			width 30%
+@media screen and (min-width:920px)
+	.players
+		&__item
+			width 24%
+@media screen and (min-width:1024px)
+	.players
+		&__item
+			width 30%								
+@media screen and (min-width:1200px)
+	.players
+		&__item
+			width 24%			
 @media screen and (min-width:640px)
 	.news
 		.posts-related

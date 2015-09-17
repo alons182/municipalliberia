@@ -661,6 +661,7 @@ img {
 }
 .header__social {
   float: right;
+  display: none;
 }
 .header__social__link {
   display: inline-block;
@@ -787,6 +788,9 @@ img {
   }
   .header__btn-menu {
     display: none;
+  }
+  .header__social {
+    display: block;
   }
 }
 .banner {

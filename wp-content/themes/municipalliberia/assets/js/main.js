@@ -6,7 +6,57 @@
      $(window).load(function() {
         $('.main').fadeTo(1000, 1);
         $('.footer').fadeTo(1000, 1);
+        setupMediaSlider();     
+      });
+
+
+     function setupMediaSlider () 
+     {
+       $("#gallery-1").find(".gallery-item").each(function(index, value) { 
+             //console.log(index + ':' + $(this).attr('class'));
+             $(this).find('a').attr('data-facebook','https://www.facebook.com/sharer/sharer.php?u='+ $(this).find('a').attr('href') );
+             $(this).find('a').attr('data-twitter','https://twitter.com/intent/tweet?via=realmadrid&url='+ $(this).find('a').attr('href') );
+             $(this).find('a').attr('data-googleplus','https://plus.google.com/share?url='+ $(this).find('a').attr('href') );
+             
+             $(this).find('a').attr('href','#image-popup');
         });
+
+        /*$('.gallery-item a').on('click',function (e) {
+          console.log($(this).attr('href'))
+          $(this).attr('href','#image-popup');
+        })*/
+
+        $('#gallery-1').scrollingCarousel();
+
+        $('.gallery-item a').attr('data-effect', 'mfp-zoom-out');
+        $('.gallery-item a').magnificPopup({
+
+                type:'inline',
+
+                midClick: true, // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+                //removalDelay: 500, //delay removal by X to allow out-animation
+               /* gallery: {
+                  enabled: true
+                },*/
+                callbacks: {
+                    beforeOpen: function() {
+
+                        this.st.mainClass = 'mfp-with-zoom';//this.st.el.attr('data-effect');
+                    },
+                     open: function() {
+                        this.content.find('#contenido-popup').html(this.st.el.find('img').clone());
+                        this.content.find('.media__share__facebook').attr('href',this.st.el.attr('data-facebook'));
+                        this.content.find('.media__share__twitter').attr('href',this.st.el.attr('data-twitter'));
+                        this.content.find('.media__share__googleplus').attr('href',this.st.el.attr('data-googleplus'));
+
+
+                    },
+
+                }
+            });
+     }
+
+
       
        btnMenu.on('click', function(){
             menu.toggle();
@@ -66,48 +116,7 @@
     itemMargin: 0
   });*/
 
-$("#gallery-1").find(".gallery-item").each(function(index, value) { 
-     //console.log(index + ':' + $(this).attr('class'));
-     $(this).find('a').attr('data-facebook','https://www.facebook.com/sharer/sharer.php?u='+ $(this).find('a').attr('href') );
-     $(this).find('a').attr('data-twitter','https://twitter.com/intent/tweet?via=realmadrid&url='+ $(this).find('a').attr('href') );
-     $(this).find('a').attr('data-googleplus','https://plus.google.com/share?url='+ $(this).find('a').attr('href') );
-     
-     $(this).find('a').attr('href','#image-popup');
-});
 
-/*$('.gallery-item a').on('click',function (e) {
-  console.log($(this).attr('href'))
-  $(this).attr('href','#image-popup');
-})*/
-
-$('#gallery-1').scrollingCarousel();
-
-$('.gallery-item a').attr('data-effect', 'mfp-zoom-out');
-$('.gallery-item a').magnificPopup({
-
-        type:'inline',
-
-        midClick: true, // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-        //removalDelay: 500, //delay removal by X to allow out-animation
-       /* gallery: {
-          enabled: true
-        },*/
-        callbacks: {
-            beforeOpen: function() {
-
-                this.st.mainClass = 'mfp-with-zoom';//this.st.el.attr('data-effect');
-            },
-             open: function() {
-                this.content.find('#contenido-popup').html(this.st.el.find('img').clone());
-                this.content.find('.media__share__facebook').attr('href',this.st.el.attr('data-facebook'));
-                this.content.find('.media__share__twitter').attr('href',this.st.el.attr('data-twitter'));
-                this.content.find('.media__share__googleplus').attr('href',this.st.el.attr('data-googleplus'));
-
-
-            },
-
-        }
-    });
  $('.media__item__link').magnificPopup({
 
         type:'inline',

@@ -20,17 +20,15 @@ get_header(); ?>
                                 <div class="banner__slide__info">
                                     <h1 class="banner__slide__title">
                                         <span>
-                                            Lorem ipsum dolor sit amet, consectetur, 
+                                            UNA GRAN PASIÓN PARA UN GRAN EQUIPO 
+
                                         </span><br />
                                         <span>
-                                            Lorem ipsum dolor sit amet
+                                            JUNTO A VOS SOMOS EL MUNICIPAL LIBERIA
                                         </span>
                                     </h1>
                                     <div class="banner__slide__intro">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat.
+                                        Apoyá siempre al equipo, asistí al estadio y defendé los colores del equipo con la gran pasión pampera; Liberia somos todos,  viví con respeto y pasión el fútbol del Municipal Liberia !!
                                     </div>
                                 </div>
                                 <a href="#" class="banner__slide__link"></a>
@@ -40,17 +38,15 @@ get_header(); ?>
                                 <div class="banner__slide__info">
                                     <h1 class="banner__slide__title">
                                         <span>
-                                            Lorem ipsum dolor sit amet, consectetur, 
+                                            UNA GRAN PASIÓN PARA UN GRAN EQUIPO 
+
                                         </span><br />
                                         <span>
-                                            Lorem ipsum dolor sit amet
+                                            JUNTO A VOS SOMOS EL MUNICIPAL LIBERIA
                                         </span>
                                     </h1>
                                     <div class="banner__slide__intro">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat.
+                                        Apoyá siempre al equipo, asistí al estadio y defendé los colores del equipo con la gran pasión pampera; Liberia somos todos,  viví con respeto y pasión el fútbol del Municipal Liberia !!
                                     </div>
                                 </div>
                                 <a href="#" class="banner__slide__link"></a>

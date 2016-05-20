@@ -611,6 +611,71 @@ function ssba_admin_panel($arrSettings) {
                 );
                 $htmlShareButtonsForm .= $ssbpForm->ssbp_input($opts);
 
+                // newsharecounts.com enable
+                $opts = array(
+                    'form_group'	=> false,
+                    'type'          => 'checkbox',
+                    'name'          => 'twitter_newsharecounts',
+                    'label'        	=> 'newsharecounts.com Counts for Twitter',
+                    'tooltip'       => 'Switch on to enable the use of the newsharecounts.com API for Twitter share counts',
+                    'value'         => 'Y',
+                    'checked'       => ($arrSettings['twitter_newsharecounts'] == 'Y'  ? 'checked' : null),
+                );
+                $htmlShareButtonsForm .= $ssbpForm->ssbp_input($opts);
+
+                // info
+                $htmlShareButtonsForm .= '<p>You shall need to follow the instructions here before enabling this feature - <a target="_blank" href="http://newsharecounts.com/">newsharecounts.com</a>';
+
+                // open sharedcount well
+                $htmlShareButtonsForm .= '<div class="well">';
+
+                    // sharedcount heading
+                    $htmlShareButtonsForm .= '<h3>sharedcount.com</h3>';
+                    $htmlShareButtonsForm .= '<p>Only necessary if you are experiencing issues with Facebook share counts. <a href="https://admin.sharedcount.com/admin/signup.php" target="_blank">Signup for your free account here</a>.</p>';
+
+                    // sharedcount enable
+                    $opts = array(
+                        'form_group'	=> false,
+                        'type'          => 'checkbox',
+                        'name'          => 'sharedcount_enabled',
+                        'label'        	=> 'Enable sharedcount.com API',
+                        'tooltip'       => 'Enable if you wish to enable the use of the sharedcount.com API',
+                        'value'         => 'Y',
+                        'checked'       => ($arrSettings['sharedcount_enabled'] == 'Y'  ? 'checked' : null),
+                    );
+                    $htmlShareButtonsForm .= $ssbpForm->ssbp_input($opts);
+
+                    // sharedcount plan
+                    $opts = array(
+                        'form_group'	=> false,
+                        'type'       	=> 'select',
+                        'name'          => 'sharedcount_plan',
+                        'label'        	=> 'sharedcount.com plan',
+                        'tooltip'       => 'Select your sharedcount.com plan',
+                        'selected'      => $arrSettings['sharedcount_plan'],
+                        'options'       => array(
+                            'Free'      => 'free',
+                            'Plus'      => 'plus',
+                            'Business'  => 'business',
+                        ),
+                    );
+                    $htmlShareButtonsForm .= $ssbpForm->ssbp_input($opts);
+
+                    // sharedcount api key
+                    $opts = array(
+                        'form_group'    => false,
+                        'type'          => 'text',
+                        'placeholder'	=> '9b17c12712c691491ef95f46c51ce3917118fdf9',
+                        'name'          => 'sharedcount_api_key',
+                        'label'        	=> 'sharedcount.com API Key',
+                        'tooltip'       => 'Add some text included in an email when people share that way',
+                        'value'         => $arrSettings['sharedcount_api_key'],
+                    );
+                    $htmlShareButtonsForm .= $ssbpForm->ssbp_input($opts);
+
+                // close well
+                $htmlShareButtonsForm .= '</div>';
+
 			// close col
 			$htmlShareButtonsForm .= '</div>';
 
@@ -897,15 +962,13 @@ function ssba_admin_panel($arrSettings) {
 
 // get an html formatted of currently selected and ordered buttons
 function getSelectedSSBA($strSelectedSSBA) {
+    //variables
+    $htmlSelectedList = '';
 
-	// variables
-	$htmlSelectedList = '';
-	$arrSelectedSSBA = '';
+    // prepare array of buttons
+    $arrButtons = json_decode(get_option('ssba_buttons'), true);
 
-	// prepare array of buttons
-	$arrButtons = json_decode(get_option('ssba_buttons'), true);
-
-	// if there are some selected buttons
+    // if there are some selected buttons
 	if ($strSelectedSSBA != '') {
 
 		// explode saved include list and add to a new array
@@ -918,7 +981,7 @@ function getSelectedSSBA($strSelectedSSBA) {
 			foreach ($arrSelectedSSBA as $strSelected) {
 
 				// add a list item for each selected option
-				$htmlSelectedList .= '<li class="ssbp-option-item" id="'.$strSelected.'"><a href="javascript:;" class="ssbp-btn ssbp-'.$strSelected.'"></a></li>';
+				$htmlSelectedList .= '<li class="ssbp-option-item" id="'.$strSelected.'"><a title="'.$arrButtons[$strSelected]["full_name"].'" href="javascript:;" class="ssbp-btn ssbp-'.$strSelected.'"></a></li>';
 			}
 		}
 	}
@@ -931,7 +994,6 @@ function getAvailableSSBA($strSelectedSSBA)
 {
 	// variables
 	$htmlAvailableList = '';
-	$arrSelectedSSBA = '';
 
 	// prepare array of buttons
 	$arrButtons = json_decode(get_option('ssba_buttons'), true);
@@ -949,7 +1011,7 @@ function getAvailableSSBA($strSelectedSSBA)
 		foreach($arrAvailableSSBA as $strAvailable)
 		{
 			// add a list item for each available option
-			$htmlAvailableList .= '<li class="ssbp-option-item" id="'.$strAvailable.'"><a href="javascript:;" class="ssbp-btn ssbp-'.$strAvailable.'"></a></li>';
+			$htmlAvailableList .= '<li class="ssbp-option-item" id="'.$strAvailable.'"><a title="'.$arrButtons[$strAvailable]["full_name"].'" href="javascript:;" class="ssbp-btn ssbp-'.$strAvailable.'"></a></li>';
 		}
 	}
 

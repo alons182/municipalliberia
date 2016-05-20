@@ -25,6 +25,7 @@ ul
 a
 	text-decoration none
 	transition all .5s ease
+	
 
 h1
 h2
@@ -57,6 +58,29 @@ img
 .transparent
 	background-color transparent
 
+input[type="text"]
+input[type="email"]
+input[type="url"]
+input[type="tel"]
+input[type="number"]
+input[type="date"]	
+select		
+textarea
+	width 100%
+	height 32px
+textarea
+	height 120px
+.submit
+	background-color amarillo
+	color #000
+	border none
+	padding .5rem
+	cursor pointer
+	&:hover
+		background-color #272727
+		color amarillo
+
+.wpcf7-submit
 .btn
 	padding .5rem .8rem
 	border-radius 6px
@@ -72,6 +96,7 @@ img
 		border-color #d6d6d6
 		box-shadow 0 1px 1px gris
 		color gris
+.wpcf7-submit
 .btn-yellow
 	background-color amarillo
 	border-color amarillo
@@ -139,7 +164,7 @@ img
 		position relative
 		&__link
 		a	
-			display block
+			display inline-block
 			color gris
 			text-transform uppercase		
 	&__btn-menu
@@ -174,29 +199,40 @@ img
 		.sub-menu		
 			background-color amarillo
 			text-align left
-			width 200px
+			width 300px
 			position absolute
 			top 55px
+			list-style
+			padding .5rem
 			&__item
 			.menu-item	
-				border-bottom 1px solid #000
+				//border-bottom 1px solid #000
 				display block
 				opacity 1 !important
 				//box-shadow 1px 1px 2px rgba(0, 0, 0, .75)
 				&:last-child
 					border none
+				&:before
+					content '\f137'
+					font-family:'municipalliberia'
+					padding-left .5rem
+					color verde
+					font-size 1rem
+				&:hover
+					background-color #000
+					color amarillo
+					a
+						color amarillo
 					
 				
 			
 			&__link
 			a	
 				color #000
-				padding .5rem 1rem
+				padding 0rem 1rem 0 .5rem
 				font-size 1rem
 				font-weight normal
-				&:hover
-					background-color #000
-					color amarillo
+				
 				
 		&__btn-menu
 			display none
@@ -343,6 +379,10 @@ img
 	.entry-content	
 		padding 1.8rem
 		color white
+		a 
+			color amarillo
+			&:hover
+				text-decoration underline
 		h1
 		h2
 		h3
@@ -520,6 +560,7 @@ img
 			img
 				display block
 		&__number
+		&__vote
 			padding 10px 0
 			display table-cell
 			width 45px
@@ -552,7 +593,7 @@ img
 @media screen and (min-width:920px)
 	.players
 		&__item
-			width 24%
+			width 28%
 @media screen and (min-width:1024px)
 	.players
 		&__item
@@ -560,7 +601,7 @@ img
 @media screen and (min-width:1200px)
 	.players
 		&__item
-			width 24%			
+			width 28%			
 @media screen and (min-width:640px)
 	.news
 		.posts-related

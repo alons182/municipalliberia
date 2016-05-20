@@ -8,7 +8,7 @@ get_header(); ?>
 	<section class="content">
         <div class="inner overflow">
         	<section class="news">
-			<h1 class="news__title">Equipo</h1>
+			<h1 class="news__title">Equiposss</h1>
         	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 		<?php if ( have_posts() ) : ?>
@@ -24,7 +24,7 @@ get_header(); ?>
 					
 				<?php
 		          $args = array(
-		            'post_type' => 'equipo',
+		            'post_type' => 'equipo'
 		           
 		            
 		          );
@@ -35,22 +35,26 @@ get_header(); ?>
 		              ?>
 		                <article class="players__item">
 			                <div class="players__item__img">
-			                	 <?php if ( has_post_thumbnail() ) :
+			                	 <?php 
+			                	 	$images = rwmb_meta( 'rw_player_thumb', 'type=image&size=full' ); 
+			                	 	foreach ( $images as $image )
+										{?>
+										    
+											<a href="<?php the_permalink(); ?>">
+						                    	<img src="<?php echo $image['url'] ?>" alt="<?php the_title(); ?>" />
+						                    </a>
 
-				                    $id = get_post_thumbnail_id($post->ID);
-				                    $thumb_url = wp_get_attachment_image_src($id,'full', true);
-				                    ?>
-				                    <a href="<?php the_permalink(); ?>">
-				                    	<img src="<?php echo $thumb_url[0] ?>" />
-				                    </a>
-				                  
-				                <?php endif; ?>
+										<?php
+											break;
+										 }
+			                	 	?>
+	
 			                </div>
 			                <div class="players__item__info">
-			                	<strong class="players__item__number">1</strong>
+			                	<strong class="players__item__number"><?php echo rwmb_meta( 'rw_player_number'); ?></strong>
 			                	<p class="players__item__content">
-			                		<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-			                		<span class="players__item__position">Portero</span>
+			                		<a href="<?php the_permalink();?>"><?php the_title(); ?></a>
+			                		<span class="players__item__position"><?php echo rwmb_meta( 'rw_player_position'); ?></span>
 			                	</p>
 
 			                </div>

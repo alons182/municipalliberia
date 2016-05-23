@@ -757,15 +757,16 @@ textarea {
 }
 @media screen and (min-width: 900px) {
   .header {
-    height: 100px;
+    height: 85px;
   }
   .header__logo {
-    width: 80px;
+    width: 125px;
+    margin-top: 0;
   }
   .header__menu {
     display: block !important;
     background-color: transparent;
-    top: 45px;
+    top: 15px;
   }
   .header__menu__item,
   .header__menu .menu-item {

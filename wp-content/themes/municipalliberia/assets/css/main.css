@@ -1469,6 +1469,7 @@ textarea {
 .widgets .widget iframe,
 .widgets__site .widget iframe {
   width: 100%;
+  height: 636px;
 }
 .widgets .widget iframe footer,
 .widgets__site .widget iframe footer {

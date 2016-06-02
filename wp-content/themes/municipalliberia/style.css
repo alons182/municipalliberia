@@ -1456,6 +1456,11 @@ textarea {
   border-bottom: 8px solid #000;
   font-weight: 700;
 }
+.widgets #text-2,
+.widgets__site #text-2 {
+  overflow: hidden;
+  height: 358px;
+}
 .widgets #text-2 iframe footer,
 .widgets__site #text-2 iframe footer {
   position: static !important;

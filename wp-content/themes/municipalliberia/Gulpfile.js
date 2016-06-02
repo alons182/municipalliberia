@@ -28,14 +28,15 @@ gulp.task('js', function () {
       './assets/js/vendor/jquery.hoverIntent.minified.js',
       './assets/js/vendor/jquery.contentcarousel.js',
       './assets/js/vendor/jquery.easing.1.3.js',
+       './assets/js/vendor/owl.carousel.js',
       
       './assets/js/vendor/jquery.magnific-popup.min.js',
       /*'./assets/js/vendor/jquery.mCustomScrollbar.js',*/
-      './assets/js/vendor/jquery.cycle2.min.js',
+      /* './assets/js/vendor/jquery.cycle2.min.js',*/
       /*'./assets/js/vendor/jquery.flexslider.js',*/
       './assets/js/vendor/scrollingcarousel.2.0.js',
-      /*'./assets/js/vendor/chosen.jquery.min.js',
-      './assets/js/vendor/wow.min.js',*/
+      /*'./assets/js/vendor/chosen.jquery.min.js',*/
+      './assets/js/vendor/wow.min.js',
       /*'./assets/js/vendor/jquery.uniform.js',*/
       
      
@@ -45,7 +46,7 @@ gulp.task('js', function () {
 
     ])
     //.pipe(browserify())
-    .pipe(uglify({ compress: true }))
+    //.pipe(uglify({ compress: true }))
     //.pipe(stripDebug())
     .pipe(concat('bundle.js'))
     .pipe(gulp.dest('./js'))
@@ -61,7 +62,7 @@ gulp.task('stylus', function () {
 });
 
 gulp.task('css', function () {
-  gulp.src(['./assets/css/main.css','./assets/css/magnific-popup.css','./assets/css/flexslider.css'])
+  gulp.src(['./assets/css/main.css','./assets/css/magnific-popup.css','./assets/css/flexslider.css','./assets/css/owl.carousel.css','./assets/css/animate.css'])
     /*.pipe(minifyCSS({ keepSpecialComments: '*', keepBreaks: '*'}))*/
     .pipe(concat('style.css'))
     .pipe(gulp.dest('./'))

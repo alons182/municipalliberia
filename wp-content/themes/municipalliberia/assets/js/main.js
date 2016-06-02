@@ -6,8 +6,30 @@
      $(window).load(function() {
         $('.main').fadeTo(1000, 1);
         $('.media').fadeTo(1000, 1);
+        new WOW().init();
         setupMediaSlider();     
       });
+
+   /* var wd = $(".textwidget iframe").contents();
+    var content = $(".textwidget iframe").contents().find('body').html();
+      $('.textwidget iframe', frames['myIframe'].document)
+    alert(content);*/
+    
+     $(".owl-carousel").owlCarousel({
+          items : 1,
+          autoplay : true,
+          loop : true,
+          nav : true,
+          navText : ['','']
+          /*onChange : function (e) {
+            console.log(e.target);
+            $('.owl-item.active span').addClass('animated');
+            $('.owl-item.active h1').addClass('animated');
+          }*/
+          /*slideSpeed : 300,
+          paginationSpeed : 400,*/
+          /*singleItem:true*/
+     });
 
 
      function setupMediaSlider() 
@@ -64,10 +86,12 @@
           over: function() {
 
                 $(this).find(">.sub-menu").slideDown(200 );
+                $(this).find(">.sub-menu").addClass('active')
               },
           out:  function() {
                 
                 $(this).find(">.sub-menu").slideUp(200);
+                 $(this).find(">.sub-menu").removeClass('active')
               },
           timeout: 200
 
@@ -76,7 +100,7 @@
 
 
 
-    menu.find(".menu-item").hover(
+   menu.find(".menu-item").hover(
           function() {
                 menu.find(".menu-item").css('opacity','0.5');
                 $(this).parents('.menu-item').css('opacity','1');

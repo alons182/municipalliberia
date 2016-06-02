@@ -7,12 +7,49 @@
 get_header(); ?>
 
 	<section class="banner">
-                <div class="cycle-slideshow" 
+               <div class="owl-carousel">
+                    <div class="banner__slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/banner1.jpg');">
+                         <div class="banner__slide__info">
+                            <h1 class="banner__slide__title ">
+                                <span>
+                                    UNA GRAN PASIÓN PARA UN GRAN EQUIPO 
+
+                                </span><br />
+                                <span>
+                                    JUNTO A VOS SOMOS EL MUNICIPAL LIBERIA
+                                </span>
+                            </h1>
+                            <div class="banner__slide__intro">
+                                Apoyá siempre al equipo, asistí al estadio y defendé los colores del equipo con la gran pasión pampera; Liberia somos todos,  viví con respeto y pasión el fútbol del Municipal Liberia !!
+                            </div>
+                        </div>
+                        <a href="#" class="banner__slide__link"></a>
+                    </div>
+                    <div class="banner__slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/banner2.jpg');">
+                                
+                        <div class="banner__slide__info">
+                            <h1 class="banner__slide__title">
+                                <span>
+                                    UNA GRAN PASIÓN PARA UN GRAN EQUIPO 
+
+                                </span><br />
+                                <span>
+                                    JUNTO A VOS SOMOS EL MUNICIPAL LIBERIA
+                                </span>
+                            </h1>
+                            <div class="banner__slide__intro">
+                                Apoyá siempre al equipo, asistí al estadio y defendé los colores del equipo con la gran pasión pampera; Liberia somos todos,  viví con respeto y pasión el fútbol del Municipal Liberia !!
+                            </div>
+                        </div>
+                        <a href="#" class="banner__slide__link"></a>
+                    </div>
+               </div>
+                <!--<div class="cycle-slideshow" 
                             data-cycle-fx="scrollHorz"
                             data-cycle-timeout="4000"
                             data-cycle-slides=".banner__slide"
                             >
-                            <!-- empty element for pager links -->
+                            
                             <div class="cycle-pager banner__pager"></div>
 
                             <div class="banner__slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/banner1.jpg');">
@@ -53,7 +90,7 @@ get_header(); ?>
                             </div>
                         
                             
-                        </div>       
+                        </div> -->      
                
             </section>
             <section class="content">

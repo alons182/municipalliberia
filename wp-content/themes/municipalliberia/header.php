@@ -25,7 +25,7 @@
 <header class="header">
                 <section class="header__social">
 
-                             <a href="#" class="header__social__link"><i class="icon-facebook"></i></a>
+                             <a href="https://www.facebook.com/ADMLiberia" class="header__social__link" target="_blank"><i class="icon-facebook"></i></a>
                              <a href="#" class="header__social__link"><i class="icon-twitter"></i></a>
                              <a href="#" class="header__social__link"><i class="icon-google-plus"></i></a>
                              <a href="#" class="header__social__link"><i class="icon-youtube"></i></a>

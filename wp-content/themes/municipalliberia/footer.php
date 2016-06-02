@@ -199,13 +199,15 @@
                 <section class="partners">
                     <div class="inner">
                         <h2 class="partners__title">Patrocinadores</h2>
-                        <a href="#" class="partners__link" title="Calitur" ><i class="icon-avotz"></i></a>
-                        <a href="#" class="partners__link" title="Palo Verde" ><i class="icon-avotz"></i></a>
-                         <a href="#" class="partners__link" title="Calitur" ><i class="icon-avotz"></i></a>
-                         <a href="#" class="partners__link" title="Calitur" ><i class="icon-avotz"></i></a>
-                         <a href="#" class="partners__link" title="Calitur" ><i class="icon-avotz"></i></a>
-                         <a href="#" class="partners__link" title="Calitur" ><i class="icon-avotz"></i></a>
-                         <a href="#" class="partners__link" title="Calitur" ><i class="icon-avotz"></i></a>
+                        <a href="#" class="partners__link" title="La Carreta" ><img src="<?php echo get_template_directory_uri(); ?>/img/partners/la-carreta.png" alt="La Carreta"></a>
+                        <a href="#" class="partners__link" title="Caballo Blanco" ><img src="<?php echo get_template_directory_uri(); ?>/img/partners/caballo-blanco.jpg" alt="Caballo Blanco"></a>
+                        <a href="#" class="partners__link" title="Prosol" ><img src="<?php echo get_template_directory_uri(); ?>/img/partners/prosol.png" alt="Prosol"></a>
+                        <a href="https://www.avotz.com/" target="_blank" class="partners__link" title="Avotz Web Works" ><img src="<?php echo get_template_directory_uri(); ?>/img/partners/avotz.png" alt="Avotz"></a>
+                        <a href="https://www.guanacastevende.com/" target="_blank" class="partners__link" title="Guanacaste Vende" ><img src="<?php echo get_template_directory_uri(); ?>/img/partners/gte-vende.png" alt="Guanacaste Vende"></a>
+                         <a href="#" class="partners__link" title="Coresa" ><img src="<?php echo get_template_directory_uri(); ?>/img/partners/coresa.png" alt="coresa"></a>
+                        <a href="#" class="partners__link" title="ICE 2 GO" ><img src="<?php echo get_template_directory_uri(); ?>/img/partners/ice2go.png" alt="ice2go"></a>
+                        <a href="#" class="partners__link" title="Studmark" ><img src="<?php echo get_template_directory_uri(); ?>/img/partners/studmark.jpg" alt="studmark"></a>
+                         <a href="#" class="partners__link" title="Teletica" ><img src="<?php echo get_template_directory_uri(); ?>/img/partners/teletica.png" alt="Teletica"></a>
                      </div>
                 </section>
                 
@@ -213,7 +215,7 @@
                     <div class="inner">
                         <section class="copy__social">
 
-                             <a href="#" class="copy__social__link"><i class="icon-facebook"></i></a>
+                             <a href="https://www.facebook.com/ADMLiberia" class="copy__social__link" target="_blank"><i class="icon-facebook"></i></a>
                              <a href="#" class="copy__social__link"><i class="icon-twitter"></i></a>
                              <a href="#" class="copy__social__link"><i class="icon-google-plus"></i></a>
                              <a href="#" class="copy__social__link"><i class="icon-youtube"></i></a>

@@ -4315,7 +4315,7 @@ jQuery.extend( jQuery.easing,
      
      $(window).load(function() {
         $('.main').fadeTo(1000, 1);
-        $('.media').fadeTo(1000, 1);
+        //$('.media').fadeTo(1000, 1);
         new WOW().init();
         setupMediaSlider();     
       });

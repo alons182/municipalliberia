@@ -41,7 +41,7 @@
           responsive:{
               0:{
                   items:1,
-                  nav:true
+                  nav:false
               },
               480:{
                   items:2,

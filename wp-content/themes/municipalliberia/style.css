@@ -1146,6 +1146,9 @@ textarea {
 .news .entry-content figure {
   position: relative;
 }
+.news .entry-content figure img {
+  display: block;
+}
 .news .entry-content figure figcaption {
   font-size: 12px;
   padding: 0.5rem;

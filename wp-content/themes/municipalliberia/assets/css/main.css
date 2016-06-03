@@ -722,109 +722,33 @@ textarea {
 .header__menu__item,
 .header__menu .menu-item {
   position: relative;
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-}
-.header__menu__item:nth-child(1),
-.header__menu .menu-item:nth-child(1) {
-  opacity: 1;
-  -ms-filter: none;
-  filter: none;
-  -webkit-animation-name: bounceInLeft;
-  -moz-animation-name: bounceInLeft;
-  -o-animation-name: bounceInLeft;
-  -ms-animation-name: bounceInLeft;
-  animation-name: bounceInLeft;
-  -webkit-animation-duration: 0.5s;
-  -moz-animation-duration: 0.5s;
-  -o-animation-duration: 0.5s;
-  -ms-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-}
-.header__menu__item:nth-child(2),
-.header__menu .menu-item:nth-child(2) {
-  opacity: 1;
-  -ms-filter: none;
-  filter: none;
-  -webkit-animation-name: bounceInLeft;
-  -moz-animation-name: bounceInLeft;
-  -o-animation-name: bounceInLeft;
-  -ms-animation-name: bounceInLeft;
-  animation-name: bounceInLeft;
-  -webkit-animation-duration: 0.5s;
-  -moz-animation-duration: 0.5s;
-  -o-animation-duration: 0.5s;
-  -ms-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-  -webkit-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
-  -o-animation-delay: 0.2s;
-  -ms-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
-.header__menu__item:nth-child(3),
-.header__menu .menu-item:nth-child(3) {
-  opacity: 1;
-  -ms-filter: none;
-  filter: none;
-  -webkit-animation-name: bounceInLeft;
-  -moz-animation-name: bounceInLeft;
-  -o-animation-name: bounceInLeft;
-  -ms-animation-name: bounceInLeft;
-  animation-name: bounceInLeft;
-  -webkit-animation-duration: 0.5s;
-  -moz-animation-duration: 0.5s;
-  -o-animation-duration: 0.5s;
-  -ms-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-  -webkit-animation-delay: 0.3s;
-  -moz-animation-delay: 0.3s;
-  -o-animation-delay: 0.3s;
-  -ms-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-}
-.header__menu__item:nth-child(4),
-.header__menu .menu-item:nth-child(4) {
-  opacity: 1;
-  -ms-filter: none;
-  filter: none;
-  -webkit-animation-name: bounceInLeft;
-  -moz-animation-name: bounceInLeft;
-  -o-animation-name: bounceInLeft;
-  -ms-animation-name: bounceInLeft;
-  animation-name: bounceInLeft;
-  -webkit-animation-duration: 0.5s;
-  -moz-animation-duration: 0.5s;
-  -o-animation-duration: 0.5s;
-  -ms-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-  -webkit-animation-delay: 0.4s;
-  -moz-animation-delay: 0.4s;
-  -o-animation-delay: 0.4s;
-  -ms-animation-delay: 0.4s;
-  animation-delay: 0.4s;
-}
-.header__menu__item:nth-child(5),
-.header__menu .menu-item:nth-child(5) {
-  opacity: 1;
-  -ms-filter: none;
-  filter: none;
-  -webkit-animation-name: bounceInLeft;
-  -moz-animation-name: bounceInLeft;
-  -o-animation-name: bounceInLeft;
-  -ms-animation-name: bounceInLeft;
-  animation-name: bounceInLeft;
-  -webkit-animation-duration: 0.5s;
-  -moz-animation-duration: 0.5s;
-  -o-animation-duration: 0.5s;
-  -ms-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-  -webkit-animation-delay: 0.5s;
-  -moz-animation-delay: 0.5s;
-  -o-animation-delay: 0.5s;
-  -ms-animation-delay: 0.5s;
-  animation-delay: 0.5s;
+/*&:nth-child(1)
+				opacity 1
+				animation-name: bounceInLeft;
+				animation-duration: .5s;
+				
+			&:nth-child(2)
+				opacity 1
+				animation-name: bounceInLeft;
+				animation-duration: .5s;
+				animation-delay: .2s;
+				
+			&:nth-child(3)
+				opacity 1
+				animation-name: bounceInLeft;
+				animation-duration: .5s;
+				animation-delay: .3s;
+			&:nth-child(4)
+				opacity 1
+				animation-name: bounceInLeft;
+				animation-duration: .5s;
+				animation-delay: .4s;
+				
+			&:nth-child(5)
+				opacity 1
+				animation-name: bounceInLeft;
+				animation-duration: .5s;
+				animation-delay: .5s;*/
 }
 .header__menu__link,
 .header__menu a {

@@ -1143,6 +1143,17 @@ textarea {
   padding: 1.8rem;
   color: #fff;
 }
+.news .entry-content figure {
+  position: relative;
+}
+.news .entry-content figure figcaption {
+  font-size: 12px;
+  padding: 0.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 .news .entry-content a {
   color: #ffe600;
 }

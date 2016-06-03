@@ -118,7 +118,7 @@
 
       
        btnMenu.on('click', function(){
-            menu.toggle();
+            menu.toggleClass('show');
            
         });
 

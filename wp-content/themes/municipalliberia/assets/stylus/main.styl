@@ -150,6 +150,30 @@ textarea
 		&__item
 		.menu-item	 
 			position relative
+			&:nth-child(1)
+				animation-name: bounceInLeft;
+				animation-duration: .5s;
+				opacity 1
+			&:nth-child(2)
+				animation-name: bounceInLeft;
+				animation-duration: .5s;
+				animation-delay: .2s;
+				//opacity 1
+			&:nth-child(3)
+				animation-name: bounceInLeft;
+				animation-duration: .5s;
+				animation-delay: .3s;
+				//opacity 1
+			&:nth-child(4)
+				animation-name: bounceInLeft;
+				animation-duration: .5s;
+				animation-delay: .4s;
+				//opacity 1
+			&:nth-child(5)
+				animation-name: bounceInLeft;
+				animation-duration: .5s;
+				animation-delay: .5s;
+				//opacity 1
 		&__link
 		a	
 			display block 
@@ -227,6 +251,8 @@ textarea
 			&__item
 			.menu-item	
 				display inline-block
+				animation-name: none !important;
+				animation-duration: 0 !important;
 				
 			&__link
 			a	

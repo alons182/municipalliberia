@@ -685,6 +685,7 @@ textarea {
   }
 }
 .header {
+  background-image: url("./img/total_tex_b.png");
   background-color: #000;
   height: 80px;
 }

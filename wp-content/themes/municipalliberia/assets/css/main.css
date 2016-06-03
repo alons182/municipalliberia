@@ -710,14 +710,19 @@ textarea {
   z-index: 999;
 }
 .header__menu {
-  display: none;
+  display: block;
   position: absolute;
   left: 0;
   right: 0;
-  top: 80px;
+  top: -280px;
   background-color: #ffe600;
   text-align: center;
   z-index: 900;
+  -webkit-transition: top 1s ease;
+  -moz-transition: top 1s ease;
+  -o-transition: top 1s ease;
+  -ms-transition: top 1s ease;
+  transition: top 1s ease;
 }
 .header__menu.show {
   -webkit-animation-name: bounceInDown;
@@ -731,6 +736,7 @@ textarea {
   -ms-animation-duration: 1s;
   animation-duration: 1s;
   display: block;
+  top: 80px;
 }
 .header__menu__item,
 .header__menu .menu-item {

@@ -722,6 +722,9 @@ textarea {
 .header__menu__item,
 .header__menu .menu-item {
   position: relative;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
 }
 .header__menu__item:nth-child(1),
 .header__menu .menu-item:nth-child(1) {
@@ -735,6 +738,9 @@ textarea {
   -o-animation-duration: 1s;
   -ms-animation-duration: 1s;
   animation-duration: 1s;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
 }
 .header__menu__item:nth-child(2),
 .header__menu .menu-item:nth-child(2) {
@@ -753,6 +759,9 @@ textarea {
   -o-animation-delay: 0.2s;
   -ms-animation-delay: 0.2s;
   animation-delay: 0.2s;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
 }
 .header__menu__item:nth-child(3),
 .header__menu .menu-item:nth-child(3) {
@@ -771,6 +780,9 @@ textarea {
   -o-animation-delay: 0.3s;
   -ms-animation-delay: 0.3s;
   animation-delay: 0.3s;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
 }
 .header__menu__item:nth-child(4),
 .header__menu .menu-item:nth-child(4) {
@@ -789,6 +801,9 @@ textarea {
   -o-animation-delay: 0.4s;
   -ms-animation-delay: 0.4s;
   animation-delay: 0.4s;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
 }
 .header__menu__item:nth-child(5),
 .header__menu .menu-item:nth-child(5) {
@@ -807,6 +822,9 @@ textarea {
   -o-animation-delay: 0.5s;
   -ms-animation-delay: 0.5s;
   animation-delay: 0.5s;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
 }
 .header__menu__link,
 .header__menu a {

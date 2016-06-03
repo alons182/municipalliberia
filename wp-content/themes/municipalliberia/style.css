@@ -1898,6 +1898,7 @@ textarea {
   color: #9f9f9f;
   margin-right: 2rem;
   width: 150px;
+  margin-bottom: 1rem;
 }
 .partners__link img {
   -webkit-filter: grayscale(100%);

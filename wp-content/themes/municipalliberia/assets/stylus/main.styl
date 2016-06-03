@@ -883,6 +883,7 @@ textarea
 	opacity 0
 	height 230px	
 	overflow hidden
+	display none
 	.gallery-item
 	&__item
 		width 100%
@@ -943,6 +944,7 @@ textarea
 	&__slider
 		position relative
 		width 100%
+		
 		.ca-nav
 			span
 				color amarillo
@@ -992,7 +994,9 @@ textarea
 			float left
 			/*border-left 15px solid transparent
 			border-right 15px solid transparent*/
-			
+@media screen and (min-width:900px)
+	.media
+		display block			
 
 .member
 	background-image url('./img/bg_member.jpg')

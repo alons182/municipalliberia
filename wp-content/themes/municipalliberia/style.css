@@ -1717,6 +1717,7 @@ textarea {
   filter: alpha(opacity=0);
   height: 230px;
   overflow: hidden;
+  display: none;
 }
 .media .gallery-item,
 .media__item {
@@ -1851,6 +1852,11 @@ textarea {
     float: left;
 /*border-left 15px solid transparent
 			border-right 15px solid transparent*/
+  }
+}
+@media screen and (min-width: 900px) {
+  .media {
+    display: block;
   }
 }
 .member {

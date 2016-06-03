@@ -735,9 +735,6 @@ textarea {
   -o-animation-duration: 0.5s;
   -ms-animation-duration: 0.5s;
   animation-duration: 0.5s;
-  opacity: 1;
-  -ms-filter: none;
-  filter: none;
 }
 .header__menu__item:nth-child(2),
 .header__menu .menu-item:nth-child(2) {
@@ -844,9 +841,6 @@ textarea {
   -o-animation-duration: 0.5s;
   -ms-animation-duration: 0.5s;
   animation-duration: 0.5s;
-  opacity: 1;
-  -ms-filter: none;
-  filter: none;
 }
 .header__submenu.active li:nth-child(2),
 .header .sub-menu.active li:nth-child(2) {

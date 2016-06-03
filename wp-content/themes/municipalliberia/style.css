@@ -993,13 +993,13 @@ textarea {
   color: #fff;
 }
 .banner__slide {
-  height: 400px;
+  height: 340px;
   width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: top center;
   position: relative;
 }
 .banner__slide__info {
@@ -1014,6 +1014,7 @@ textarea {
   text-transform: uppercase;
   display: inline-block;
   font-weight: 700;
+  font-size: 1.5rem;
 }
 .banner__slide__title span {
   background-color: #000;
@@ -1041,6 +1042,13 @@ textarea {
 @media screen and (min-width: 900px) {
   .banner__slide {
     height: 600px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+  }
+  .banner__slide__title {
+    font-size: 2rem;
   }
 }
 @media screen and (min-width: 1200px) {

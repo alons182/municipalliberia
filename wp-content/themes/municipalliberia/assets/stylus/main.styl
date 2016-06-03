@@ -300,11 +300,11 @@ textarea
 			&.cycle-pager-active
 				color white
 	&__slide
-		height 400px
+		height 340px
 		width 100%
-		background-size cover
+		background-size contain
 		background-repeat no-repeat
-		background-position center center
+		background-position top center
 		position relative
 		
 		&__info
@@ -319,6 +319,7 @@ textarea
 			text-transform uppercase
 			display inline-block
 			font-weight 700
+			font-size 1.5rem
 			span
 				background-color #000
 				display inline-block
@@ -343,6 +344,10 @@ textarea
 	.banner
 		&__slide
 			height 600px
+			background-size cover
+			background-position center center
+			&__title
+				font-size 2rem
 			
 @media screen and (min-width:1200px)
 	.banner

@@ -1143,6 +1143,9 @@ textarea {
   padding: 1.8rem;
   color: #fff;
 }
+.news .entry-content iframe {
+  width: 100%;
+}
 .news .entry-content figure {
   position: relative;
 }

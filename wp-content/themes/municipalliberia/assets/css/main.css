@@ -1526,6 +1526,10 @@ textarea {
 .widgets__site .widget iframe footer {
   display: none !important;
 }
+.widgets .widget img,
+.widgets__site .widget img {
+  display: block;
+}
 .widgets .widget_search,
 .widgets__site .widget_search {
   padding: 0.5rem;

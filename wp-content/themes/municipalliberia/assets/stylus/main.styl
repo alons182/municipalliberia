@@ -851,12 +851,12 @@ textarea
 			//width 270px
 			overflow hidden
 			margin 0 auto
-		.ca-nav
+		.owl-nav
 			
-			span
+			div
 				color amarillo
 				position absolute
-				//top 50%
+				top -40px
 				transform translate(0,50%)
 				z-index 200
 				cursor pointer
@@ -865,11 +865,18 @@ textarea
 				font-size 3rem
 				&:hover
 					background-color rgba(0, 0, 0, .85)
-			.ca-nav-prev
+			.owl-prev
 				left 0
+				&:before
+					content: "\f104";
+					font-family 'municipalliberia'
+					
 				
-			.ca-nav-next
+			.owl-next
 				right 0
+				&:before
+					content: "\f105";
+					font-family 'municipalliberia'
 						
 .media
 	background url('./img/total_tex.png') repeat amarillo

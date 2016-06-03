@@ -4325,9 +4325,24 @@ jQuery.extend( jQuery.easing,
       $('.textwidget iframe', frames['myIframe'].document)
     alert(content);*/
     
-     $(".owl-carousel").owlCarousel({
+     $("#banner-home").owlCarousel({
           items : 1,
           autoplay : true,
+          loop : true,
+          nav : true,
+          navText : ['','']
+          /*onChange : function (e) {
+            console.log(e.target);
+            $('.owl-item.active span').addClass('animated');
+            $('.owl-item.active h1').addClass('animated');
+          }*/
+          /*slideSpeed : 300,
+          paginationSpeed : 400,*/
+          /*singleItem:true*/
+     });
+     $("#store-slider").owlCarousel({
+          items : 5,
+          autoplay : false,
           loop : true,
           nav : true,
           navText : ['','']

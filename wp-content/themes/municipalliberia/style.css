@@ -1679,9 +1679,10 @@ textarea {
   overflow: hidden;
   margin: 0 auto;
 }
-.store__slider .ca-nav span {
+.store__slider .owl-nav div {
   color: #ffe600;
   position: absolute;
+  top: -40px;
   -webkit-transform: translate(0, 50%);
   -moz-transform: translate(0, 50%);
   -o-transform: translate(0, 50%);
@@ -1693,14 +1694,22 @@ textarea {
   padding: 4rem 1rem;
   font-size: 3rem;
 }
-.store__slider .ca-nav span:hover {
+.store__slider .owl-nav div:hover {
   background-color: rgba(0,0,0,0.85);
 }
-.store__slider .ca-nav .ca-nav-prev {
+.store__slider .owl-nav .owl-prev {
   left: 0;
 }
-.store__slider .ca-nav .ca-nav-next {
+.store__slider .owl-nav .owl-prev:before {
+  content: "\f104";
+  font-family: 'municipalliberia';
+}
+.store__slider .owl-nav .owl-next {
   right: 0;
+}
+.store__slider .owl-nav .owl-next:before {
+  content: "\f105";
+  font-family: 'municipalliberia';
 }
 .media {
   background: url("./img/total_tex.png") repeat #ffe600;

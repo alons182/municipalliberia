@@ -20,7 +20,7 @@
                     <div class="store__slider">
                         
                         <h1 class="store__title">Tienda</h1>
-                        <div class="ca-wrapper">
+                        <div id="store-slider" class="owl-carousel">
 
                            
                                 <div class="store__slider__item ca-item">
@@ -112,6 +112,98 @@
                            
 
                         </div>
+                        <!--<div class="ca-wrapper">
+
+                           
+                                <div class="store__slider__item ca-item">
+                                    <a href="#" class="store__slider__item__link">
+                                        <figure class="store__slider__item__img">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/shop-item.jpg" alt="item">
+                                        </figure>
+                                        <span class="store__slider__item__caption">
+                                            
+                                                Camisa Casa
+
+                                           
+                                        </span>
+                                    </a>
+                                    
+                                </div>
+                                <div class="store__slider__item ca-item">
+                                    <a href="#" class="store__slider__item__link">
+                                        <figure class="store__slider__item__img">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/shop-item-2.jpg" alt="item">
+                                        </figure>
+                                        <span class="store__slider__item__caption">
+                                            
+                                                Pantaloneta Casa
+
+                                           
+                                        </span>
+                                    </a>
+                                    
+                                </div>
+                                <div class="store__slider__item ca-item">
+                                    <a href="#" class="store__slider__item__link">
+                                        <figure class="store__slider__item__img">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/shop-item-3.jpg" alt="item">
+                                        </figure>
+                                        <span class="store__slider__item__caption">
+                                            
+                                                Camisa Visita
+
+                                           
+                                        </span>
+                                    </a>
+                                    
+                                </div>
+                                <div class="store__slider__item ca-item">
+                                    <a href="#" class="store__slider__item__link">
+                                        <figure class="store__slider__item__img">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/shop-item-4.jpg" alt="item">
+                                        </figure>
+                                        <span class="store__slider__item__caption">
+                                            
+                                                Pantaloneta Visita
+
+                                           
+                                        </span>
+                                    </a>
+                                    
+                                </div>
+                                <div class="store__slider__item ca-item">
+                                    <a href="#" class="store__slider__item__link">
+                                        <figure class="store__slider__item__img">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/shop-item-5.jpg" alt="item">
+                                        </figure>
+                                        <span class="store__slider__item__caption">
+                                            
+                                                Camisa Portero Casa
+
+                                           
+                                        </span>
+                                    </a>
+                                    
+                                </div>
+                                <div class="store__slider__item ca-item">
+                                    <a href="#" class="store__slider__item__link">
+                                        <figure class="store__slider__item__img">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/shop-item-6.jpg" alt="item">
+                                        </figure>
+                                        <span class="store__slider__item__caption">
+                                            
+                                                Camisa Femenina Casa
+
+                                           
+                                        </span>
+                                    </a>
+                                    
+                                </div>
+                                
+                                
+                           
+
+                        </div>-->
                     </div>
                 </div>
             </section>
@@ -192,7 +284,7 @@
                 <div class="inner"> 
                     <h2 class="member__title">Se parte de nosotros</h2>
                     <p class="member__info">Para el Municipal Liberia es muy importante buscar en sus aficionados la identidad de nuestro Equipo, identidad que nos hace ser guanacastecos.</p>
-                    <a class="member__button btn btn-red" href="#">Hazte Socio</a>
+                    <a class="member__button btn btn-red" href="<?php echo esc_url( home_url( '/tiquetes-y-membresia' ) ); ?>">Hazte Socio Ya!</a>
                 </div>
             </section>
             

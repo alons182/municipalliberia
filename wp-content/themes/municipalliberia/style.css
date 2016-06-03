@@ -1838,6 +1838,7 @@ textarea {
 .partners__title {
   color: #fff;
   text-transform: uppercase;
+  font-size: 2rem;
 }
 .partners__link {
   display: inline-block;

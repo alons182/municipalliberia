@@ -1143,6 +1143,19 @@ textarea {
   padding: 1.8rem;
   color: #fff;
 }
+.news .entry-content .title-tickets:before {
+  display: none;
+  content: '';
+  position: absolute;
+  width: 130px;
+  left: 0;
+  bottom: 250px;
+  height: 200px;
+  background-image: url("./img/TICKETS-COYOTES.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
 .news .entry-content iframe {
   width: 100%;
 }
@@ -1467,6 +1480,9 @@ textarea {
   }
 }
 @media screen and (min-width: 900px) {
+  .news .entry-content .title-tickets:before {
+    display: block;
+  }
   .news .entry-content .sidebar {
     padding-left: 140px !important;
   }

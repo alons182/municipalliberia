@@ -143,6 +143,10 @@ function municipalliberia_scripts() {
 add_action( 'wp_enqueue_scripts', 'municipalliberia_scripts' );
 
 
+add_filter ("wp_mail_from", "my_awesome_mail_from");
+function my_awesome_mail_from() {
+	return "info@municipalliberia.com";
+}
 
 /**
  * Implement the Custom Header feature.

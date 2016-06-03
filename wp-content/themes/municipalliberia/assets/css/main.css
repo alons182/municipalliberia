@@ -1646,7 +1646,7 @@ textarea {
   text-transform: uppercase;
 }
 .store__slider {
-  height: 316px;
+  min-height: 316px;
   position: relative;
   top: 0;
   z-index: 99;
@@ -1654,7 +1654,6 @@ textarea {
 .store__slider__item {
   display: inline-block;
   margin-right: 20px;
-  width: 210px;
   background-color: #ffe600;
   text-align: center;
   -webkit-box-sizing: content-box;

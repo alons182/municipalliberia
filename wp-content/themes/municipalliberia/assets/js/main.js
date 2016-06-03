@@ -35,7 +35,32 @@
           autoplay : false,
           loop : true,
           nav : true,
-          navText : ['','']
+          navText : ['',''],
+          margin: 5,
+          responsiveClass:true,
+          responsive:{
+              0:{
+                  items:1,
+                  nav:true
+              },
+              480:{
+                  items:2,
+                  nav:true
+              },
+              640:{
+                  items:3,
+                  nav:true
+              },
+              1000:{
+                  items:4,
+                  nav:true,
+                  
+              },
+              1200:{
+                  items:5,
+                  nav:true,
+              }
+          }
           /*onChange : function (e) {
             console.log(e.target);
             $('.owl-item.active span').addClass('animated');

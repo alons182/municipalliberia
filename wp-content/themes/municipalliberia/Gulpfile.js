@@ -32,7 +32,7 @@ gulp.task('js', function () {
       
       './assets/js/vendor/jquery.magnific-popup.min.js',
       /*'./assets/js/vendor/jquery.mCustomScrollbar.js',*/
-      /* './assets/js/vendor/jquery.cycle2.min.js',*/
+       './assets/js/vendor/jquery.cycle2.min.js',
       /*'./assets/js/vendor/jquery.flexslider.js',*/
       './assets/js/vendor/scrollingcarousel.2.0.js',
       /*'./assets/js/vendor/chosen.jquery.min.js',*/
@@ -46,7 +46,7 @@ gulp.task('js', function () {
 
     ])
     //.pipe(browserify())
-    //.pipe(uglify({ compress: true }))
+    .pipe(uglify({ compress: true }))
     //.pipe(stripDebug())
     .pipe(concat('bundle.js'))
     .pipe(gulp.dest('./js'))

@@ -52,7 +52,7 @@ get_header(); ?>
 			           <section class="news">
                         <h1 class="news__title">Noticias</h1>
                         <?php rewind_posts(); ?>
-                        <?php query_posts( 'post_type=post&posts_per_page=5' ); ?>
+                        <?php query_posts( 'post_type=post&posts_per_page=3' ); ?>
                         <?php if ( have_posts() ) : ?>
                         <?php $c=0;?>
                         <?php while ( have_posts() ) : the_post(); ?>
@@ -82,7 +82,50 @@ get_header(); ?>
                         
                         <?php endwhile; ?>
                          <?php endif; ?>
+                             <section class="ads">
+                                <div class="cycle-slideshow"  data-cycle-timeout="4000"  data-cycle-slides=".ads-slide">
+                
+                                    <?php
+                                        $args = array(
+                                          'post_type' => 'ads',
+                                                          
+                                        );
+                                        $ads = new WP_Query( $args );
+                                        if( $ads->have_posts() ) {
+                                          while( $ads->have_posts() ) {
+                                            $ads->the_post();
+                                            
+                            
+                                            $url = rwmb_meta( 'rw_ad_url');
+                                            ?>
+                                               
+                                                 <div class="ads-slide">
+                                                    <a href="<?php echo $url; ?>" target="_blank" title="<?php the_title(); ?>">
+                                                    <?php                               
+                                                        
+                                                     
+
+                                                                 the_post_thumbnail( 'full',["class" => "ads-img"]); 
+                                                                    
+                                                                ?>
+                                                    
+                                                       
+                                                    </a>
+                                                </div>
+
+
+                                              
+                                            <?php
+                                          }
+                                        }
+                                        
+                                      ?>
+
+                                   
+                               </div>
+                            </section>
                         </section>
+                        
 			           
 
 					<?php get_sidebar('site'); ?>

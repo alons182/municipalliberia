@@ -284,7 +284,7 @@
                 <div class="inner"> 
                     <h2 class="member__title">Se parte de nosotros</h2>
                     <p class="member__info">Para el Municipal Liberia es muy importante buscar en sus aficionados la identidad de nuestro Equipo, identidad que nos hace ser guanacastecos.</p>
-                    <a class="member__button btn btn-red" href="<?php echo esc_url( home_url( '/tiquetes-y-membresia' ) ); ?>">Hazte Socio Ya!</a>
+                    <a class="member__button btn btn-red" href="<?php echo esc_url( home_url( '/tiquetes-y-membresia' ) ); ?>">Hacéte Socio Ya!</a>
                 </div>
             </section>
             

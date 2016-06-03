@@ -308,7 +308,7 @@
                         <section class="copy__social">
 
                              <a href="https://www.facebook.com/ADMLiberia" class="copy__social__link" target="_blank"><i class="icon-facebook"></i></a>
-                             <a href="#" class="copy__social__link"><i class="icon-twitter"></i></a>
+                             <a href="https://twitter.com/admliberia" class="copy__social__link" target="_blank"><i class="icon-twitter"></i></a>
                              <a href="#" class="copy__social__link"><i class="icon-google-plus"></i></a>
                              <a href="#" class="copy__social__link"><i class="icon-youtube"></i></a>
                              

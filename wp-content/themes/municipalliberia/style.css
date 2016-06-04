@@ -1103,11 +1103,8 @@ textarea {
     display: block;
   }
 }
-.main {
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-}
+/*.main 
+	opacity 0*/
 .content {
   padding: 0;
 }
@@ -1304,7 +1301,6 @@ textarea {
   -webkit-justify-content: space-between;
   justify-content: space-between;
   text-align: center;
-  display: block;
 }
 .news .posts-related .related_post li {
   background-color: #000 !important;
@@ -1325,6 +1321,7 @@ textarea {
   font-weight: 700;
   overflow: hidden;
   position: relative;
+  display: block;
 }
 .news .posts-related .wp_rp_title {
   padding: 0.5rem 0.8rem;

@@ -20,7 +20,8 @@
           autoplay : true,
           loop : true,
           nav : true,
-          navText : ['','']
+          navText : ['',''],
+          autoplayTimeout : 6000
           /*onChange : function (e) {
             console.log(e.target);
             $('.owl-item.active span').addClass('animated');

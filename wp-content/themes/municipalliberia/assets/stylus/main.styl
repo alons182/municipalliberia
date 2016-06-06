@@ -249,9 +249,7 @@ textarea
 		/*position absolute
 		left 0 
 		right 0*/
-		&__logo
-			width 125px
-			margin-top 0
+		
 		&__menu 
 			display block !important
 			background-color transparent
@@ -267,6 +265,7 @@ textarea
 			a	
 				color amarillo
 				font-size 1.5rem
+				padding .8rem .3rem
 		&__submenu
 		.sub-menu		
 			background-color amarillo
@@ -311,7 +310,19 @@ textarea
 		&__btn-menu
 			display none
 		&__social
-			display block		
+			display block
+			position relative
+			z-index 901
+@media screen and (min-width:1170px)
+	.header
+		&__logo
+			width 125px
+			margin-top 0
+		&__menu 
+			&__link
+			a	
+				padding .8rem 
+		
 .banner
 	width 100%
 	position relative

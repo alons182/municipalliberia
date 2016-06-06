@@ -895,10 +895,6 @@ textarea {
 		left 0 
 		right 0*/
   }
-  .header__logo {
-    width: 125px;
-    margin-top: 0;
-  }
   .header__menu {
     display: block !important;
     background-color: transparent;
@@ -922,6 +918,7 @@ textarea {
   .header__menu a {
     color: #ffe600;
     font-size: 1.5rem;
+    padding: 0.8rem 0.3rem;
   }
   .header__submenu,
   .header .sub-menu {
@@ -994,6 +991,18 @@ textarea {
   }
   .header__social {
     display: block;
+    position: relative;
+    z-index: 901;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .header__logo {
+    width: 125px;
+    margin-top: 0;
+  }
+  .header__menu__link,
+  .header__menu a {
+    padding: 0.8rem;
   }
 }
 .banner {

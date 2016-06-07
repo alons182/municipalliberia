@@ -8,43 +8,47 @@ get_header(); ?>
 
 	<section class="banner">
                <div id="banner-home" class="owl-carousel">
-                    <div class="banner__slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/banner1.jpg');">
-                         <div class="banner__slide__info">
-                            <h1 class="banner__slide__title ">
-                                <span>
-                                    UNA GRAN PASIÓN PARA UN GRAN EQUIPO 
 
-                                </span><br />
-                                <span>
-                                    JUNTO A VOS SOMOS EL MUNICIPAL LIBERIA
-                                </span>
-                            </h1>
-                            <div class="banner__slide__intro">
-                                Apoyá siempre al equipo, asistí al estadio y defendé los colores del equipo con la gran pasión pampera; Liberia somos todos,  viví con respeto y pasión el fútbol del Municipal Liberia !!
-                            </div>
-                        </div>
-                        <a href="#" class="banner__slide__link"></a>
-                    </div>
-                    <div class="banner__slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/banner2.jpg');">
-                                
-                        <div class="banner__slide__info">
-                            <h1 class="banner__slide__title">
-                                <span>
-                                    UNA GRAN PASIÓN PARA UN GRAN EQUIPO 
+                     <?php
+                        $args = array(
+                          'post_type' => 'banners',
+                                          
+                        );
+                        $ads = new WP_Query( $args );
+                        if( $ads->have_posts() ) {
+                          while( $ads->have_posts() ) {
+                            $ads->the_post();
+                            
+                            $id = get_post_thumbnail_id($post->ID);
+                            $thumb_url = wp_get_attachment_image_src($id,'full', true);
+                            ?>
+                           
+                        
+                               <div class="banner__slide" style="background-image: url('<?php echo $thumb_url[0] ?>');">
+                                 <div class="banner__slide__info">
+                                    <h1 class="banner__slide__title ">
+                                        <span>
+                                            <?php echo rwmb_meta( 'rw_banner_titulo_1'); ?>
 
-                                </span><br />
-                                <span>
-                                    JUNTO A VOS SOMOS EL MUNICIPAL LIBERIA
-                                </span>
-                            </h1>
-                            <div class="banner__slide__intro">
-                                Apoyá siempre al equipo, asistí al estadio y defendé los colores del equipo con la gran pasión pampera; Liberia somos todos,  viví con respeto y pasión el fútbol del Municipal Liberia !!
+                                        </span><br />
+                                        <span>
+                                           <?php echo rwmb_meta( 'rw_banner_titulo_2'); ?>
+                                        </span>
+                                    </h1>
+                                    <div class="banner__slide__intro">
+                                        <?php the_content(); ?>
+                                    </div>
+                                </div>
+                                <a href="#" class="banner__slide__link"></a>
                             </div>
-                        </div>
-                        <a href="#" class="banner__slide__link"></a>
-                    </div>
-               </div>
-                
+
+                              
+                            <?php
+                          }
+                        }
+                        
+                      ?>
+
                
             </section>
             <section class="content">

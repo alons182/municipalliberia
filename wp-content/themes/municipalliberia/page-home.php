@@ -39,7 +39,11 @@ get_header(); ?>
                                         <?php the_content(); ?>
                                     </div>
                                 </div>
+                               <?php if(rwmb_meta( 'rw_banner_url')): ?>
+                                <a href="<?php echo rwmb_meta( 'rw_banner_url'); ?>" class="banner__slide__link"></a>
+                                <?php else : ?>
                                 <a href="#" class="banner__slide__link"></a>
+                                <?php endif ?>
                             </div>
 
                               

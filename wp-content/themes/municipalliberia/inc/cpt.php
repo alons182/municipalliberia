@@ -100,6 +100,15 @@ function municipalliberia_register_meta_boxes( $meta_boxes )
                 'std'   => '',
                 'class' => 'custom-class'
                 
+            ),
+             array(
+                'name'  => 'Url',
+                'desc'  => 'Format: Url',
+                'id'    => $prefix . 'banner_url',
+                'type'  => 'url',
+                'std'   => '',
+                'class' => 'custom-class'
+                
             )
 
         )

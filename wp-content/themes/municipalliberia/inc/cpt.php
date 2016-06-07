@@ -226,7 +226,7 @@ function my_custom_post_banners() {
     'add_new_item'       => __( 'Add New Banner' ),
     'edit_item'          => __( 'Edit Banner' ),
     'new_item'           => __( 'New Banner' ),
-    'all_items'          => __( 'All ads' ),
+    'all_items'          => __( 'All Banners' ),
     'view_item'          => __( 'View Banner' ),
     'search_items'       => __( 'Search Banners' ),
     'not_found'          => __( 'No Banners found' ),

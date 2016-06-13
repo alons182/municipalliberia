@@ -14,7 +14,7 @@
 	<article class="news__item featured">
         <a href="<?php the_permalink(); ?>" class="news__item__link">
             <figure class="news__item__figure">
-                <?php the_post_thumbnail( 'full' ,["class" => "news__item__img"]); ?> 
+                <?php the_post_thumbnail( 'large' ,["class" => "news__item__img"]); ?> 
                 <div class="news__item__date">
                    <?php echo get_the_date('Y.m.d'); ?>
                 </div>

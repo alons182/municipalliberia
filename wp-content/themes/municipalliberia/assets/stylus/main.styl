@@ -674,7 +674,127 @@ textarea
 	a 
 		color amarillo
 		&:hover
-			text-decoration underline				
+			text-decoration underline
+.player-positions
+	height: 130px;
+	width: 177px;
+	padding: 0;
+	margin: 2rem 0 3rem 0;
+	background: url('./img/campo-juego-yellow.png');
+	background-repeat: no-repeat;
+	position: relative;
+
+	h4 
+		position: absolute;
+		top: -30px;
+		left: 0;
+		right: 0;
+		text-align: center;
+	&-titles
+		display block
+		font-size 10px
+		position absolute
+		bottom -40px
+		line-height 16px
+		text-align center
+		height 35px
+		left 0
+		right 0
+	.Portero
+		position: absolute;
+		bottom: 0;
+		left: 72px;
+	.Defensa-Central
+		position: absolute;
+		top: 75px;
+		left: 40px;
+		&.secondary
+			left: 53px;
+	.Defensa-Central2
+		position: absolute;
+		top: 75px;
+		left: 102px;
+	.Lateral-Derecho
+		position: absolute;
+		top: 70px;
+		left: 138px;
+		&.secondary
+			left 153px
+	.Lateral-Izquierdo
+		position: absolute;
+		top: 70px;
+		left: 5px;
+	.Mediocampista-Defensivo
+		position: absolute;
+		top: 50px;
+		left: 72px;
+		&.secondary
+			top: 60px;
+			left: 80px;
+	.Mediocampista-Central
+		position: absolute;
+		top: 26px;
+		left: 71px;
+		&.secondary
+			top: 43px;
+			left: 79px;
+	.Mediocampista-Izquierdo
+		position: absolute;
+		top: 30px
+		left: 16px;
+		&.secondary
+			top: 43px;
+			left: 16px;
+	.Mediocampista-Derecho
+		position: absolute;
+		top: 30px;
+		left: 141px;
+		&.secondary
+			top: 43px;
+			left: 141px;
+	.Mediocampista-Ofensivo
+		position: absolute;
+		top: 20px;
+		left: 72px;
+		&.secondary
+			top 26px
+			left: 78px;
+	.Delantero-Centro
+		position: absolute;
+		top: -10px;
+		left: 72px;
+		&.secondary
+			left: 79px;
+	.Delantero-Secundario
+		position: absolute;
+		top: 6px;
+		left: 71px;
+		&.secondary
+			top: 7px;
+			left: 79px;
+	.Ala-Derecha
+		position: absolute;
+		top: 0px;
+		left: 128px;
+		&.secondary
+			top: 3px;
+	.Ala-Izquierda
+		position: absolute;
+		top: 0px;
+		left: 14px;
+		&.secondary
+			top: 3px;
+			left: 30px;
+@media screen and (min-width:640px)
+	.player-positions
+		float right
+		height: 130px;
+		width: 177px;
+		padding: 0;
+		margin: 1rem 0 0 0;
+		position: relative;
+	
+	
 .players
 	text-align center
 	&__item
@@ -698,7 +818,7 @@ textarea
 			font-size 2.9em
 			text-align center
 		&__content
-			padding 8px 10px 22px
+			padding 8px 0 22px 10px
 			display table-cell
 			vertical-align middle
 			text-align left
@@ -707,8 +827,9 @@ textarea
 			a 
 				color amarillo
 		&__position
-			line-height 3px
+			line-height 16px
 			display block
+			font-size 10px
 @media screen and (min-width:480px)
 	.players
 		display flex

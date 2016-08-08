@@ -1450,6 +1450,10 @@ textarea {
 .navigation a:hover {
   text-decoration: underline;
 }
+.player-right {
+  width: 177px;
+  position: relative;
+}
 .player-positions {
   height: 130px;
   width: 177px;
@@ -1588,13 +1592,11 @@ textarea {
   left: 30px;
 }
 @media screen and (min-width: 640px) {
-  .player-positions {
+  .player-right {
     float: right;
-    height: 130px;
-    width: 177px;
-    padding: 0;
-    margin: 1rem 0 0 0;
-    position: relative;
+/*padding: 0;
+		margin: 1rem 0 0 0;
+		position: relative;*/
   }
 }
 .players {

@@ -30,7 +30,7 @@
 				
 				<div class="player-right">
 						<div class="player-positions">
-						<h4>Posiciones</h4>
+						<h4>Posiciones:</h4>
 
 						<?php 
 							$pos = rwmb_meta( 'rw_player_position');
@@ -57,7 +57,7 @@
 						   			
 							<?php endif ?>
 							<div class="player-positions-titles">
-								<div class="player-positions-titles-item">Posaaaaa. 1: <?php echo $pos; ?></div>
+								<div class="player-positions-titles-item">Pos. 1: <?php echo $pos; ?></div>
 							<?php if($pos2) : ?>
 								<div class="player-positions-titles-item">Pos. 2: <?php echo $pos2; ?></div>
 							<?php endif ?>

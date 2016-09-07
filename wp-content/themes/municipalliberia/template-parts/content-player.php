@@ -57,7 +57,7 @@
 						   			
 							<?php endif ?>
 							<div class="player-positions-titles">
-								<div class="player-positions-titles-item">Posa. 1: <?php echo $pos; ?></div>
+								<div class="player-positions-titles-item">Posaaaaa. 1: <?php echo $pos; ?></div>
 							<?php if($pos2) : ?>
 								<div class="player-positions-titles-item">Pos. 2: <?php echo $pos2; ?></div>
 							<?php endif ?>

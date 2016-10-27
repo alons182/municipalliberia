@@ -31,6 +31,7 @@ get_header(); ?>
 				<?php
 		          $args = array(
 		            'post_type' => 'equipo',
+		            'posts_per_page' => 30
 		           
 		            
 		          );

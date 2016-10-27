@@ -18,7 +18,8 @@ get_header(); ?>
 					<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
 					<div class="posts-related">
-						<?php zemanta_related_posts()/*wp_related_posts()*/?>
+						
+						<?php if( function_exists('zemanta_related_posts')) zemanta_related_posts()/*wp_related_posts()*/?>
 					</div>
 					<?php /*the_post_navigation();*/ ?>
 

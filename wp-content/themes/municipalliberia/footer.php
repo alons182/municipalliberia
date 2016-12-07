@@ -305,6 +305,7 @@
                          <a href="#" class="partners__link" title="total parts" ><img src="<?php echo get_template_directory_uri(); ?>/img/partners/total-parts-logo.png" alt="total parts"></a>
                           <a href="#" class="partners__link" title="viakon" ><img src="<?php echo get_template_directory_uri(); ?>/img/partners/viakon.png" alt="viakon"></a>
                           <a href="#" class="partners__link" title="wilson" ><img src="<?php echo get_template_directory_uri(); ?>/img/partners/wilson.png" alt="wilson"></a>
+                          <a href="#" class="partners__link" title="Best Value" ><img src="<?php echo get_template_directory_uri(); ?>/img/partners/best-value.png" alt="Best Value"></a>
                           
                      </div>
                 </section>

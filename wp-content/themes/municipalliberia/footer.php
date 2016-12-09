@@ -309,6 +309,9 @@
                           
                      </div>
                 </section>
+                <section class="footer-address">
+                    Costado este estadio Edgardo Baltodano Briceño, Tercer Piso. Teléfono 4700-5179
+                </section>
                 
                 <section class="copy">
                     <div class="inner">

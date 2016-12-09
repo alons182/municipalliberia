@@ -1828,6 +1828,10 @@ textarea {
 .footer {
   background-color: #000;
 }
+.footer-address {
+  color: #666;
+  text-align: center;
+}
 .social {
   color: #fff;
   padding: 1rem 0;
